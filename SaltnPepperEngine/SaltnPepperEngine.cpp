@@ -1,10 +1,12 @@
-// SaltnPepperEngine.cpp : Defines the functions for the static library.
+﻿// SaltnPepperEngine.cpp : Defines the entry point for the application.
 //
 
-#include "pch.h"
-#include "framework.h"
+#include "SaltnPepperEngine.h"
 
-// TODO: This is an example of a library function
-void fnSaltnPepperEngine()
+using namespace std;
+
+int main()
 {
+	cout << "Hello CMake." << endl;
+	return 0;
 }

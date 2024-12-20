@@ -1,0 +1,101 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1,
+						2
+					],
+					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.8"
+					},
+					"projectIndex" : 0,
+					"source" : "."
+				},
+				{
+					"build" : "SaltnPepperEngine",
+					"jsonFile" : "directory-SaltnPepperEngine-Debug-38759c8fa2e6b57251b8.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.8"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "SaltnPepperEngine",
+					"targetIndexes" : 
+					[
+						0
+					]
+				},
+				{
+					"build" : "SaltnPepperRuntime",
+					"jsonFile" : "directory-SaltnPepperRuntime-Debug-9bc5be03737dbdc05bd2.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.8"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "SaltnPepperRuntime",
+					"targetIndexes" : 
+					[
+						1
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0,
+						1,
+						2
+					],
+					"name" : "SaltnPepper",
+					"targetIndexes" : 
+					[
+						0,
+						1
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 1,
+					"id" : "SaltnPepperEngine::@54b288ea1210970ff85d",
+					"jsonFile" : "target-SaltnPepperEngine-Debug-c09e6ad86c589ce77381.json",
+					"name" : "SaltnPepperEngine",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "SaltnPepperRuntime::@fc009cef3499d093e52f",
+					"jsonFile" : "target-SaltnPepperRuntime-Debug-dd1a1884c743e152fb28.json",
+					"name" : "SaltnPepperRuntime",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "D:/GameEngineStuff/SaltnPepper/out/build/x64-debug",
+		"source" : "D:/GameEngineStuff/SaltnPepper"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 7
+	}
+}
