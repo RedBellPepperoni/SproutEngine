@@ -69,7 +69,7 @@ build rebuild_cache: phony CMakeFiles\rebuild_cache.util
 # =============================================================================
 
 # =============================================================================
-# Object build statements for STATIC_LIBRARY target SaltnPepperEngine
+# Object build statements for EXECUTABLE target SaltnPepperEngine
 
 
 #############################################
@@ -79,28 +79,30 @@ build cmake_object_order_depends_target_SaltnPepperEngine: phony || .
 
 build SaltnPepperEngine\CMakeFiles\SaltnPepperEngine.dir\SaltnPepperEngine.cpp.obj: CXX_COMPILER__SaltnPepperEngine_unscanned_Debug D$:\GameEngineStuff\SaltnPepper\SaltnPepperEngine\SaltnPepperEngine.cpp || cmake_object_order_depends_target_SaltnPepperEngine
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Ob0 /Od /RTC1 -std:c++20 -ZI
-  INCLUDES = -I\spdlog
+  INCLUDES = -ID:\GameEngineStuff\SaltnPepper\SaltnPepperEngine\Externals -ID:\GameEngineStuff\SaltnPepper\SaltnPepperEngine\Engine
   OBJECT_DIR = SaltnPepperEngine\CMakeFiles\SaltnPepperEngine.dir
   OBJECT_FILE_DIR = SaltnPepperEngine\CMakeFiles\SaltnPepperEngine.dir
-  TARGET_COMPILE_PDB = SaltnPepperEngine\CMakeFiles\SaltnPepperEngine.dir\SaltnPepperEngine.pdb
+  TARGET_COMPILE_PDB = SaltnPepperEngine\CMakeFiles\SaltnPepperEngine.dir\
   TARGET_PDB = SaltnPepperEngine\SaltnPepperEngine.pdb
 
 
 # =============================================================================
-# Link build statements for STATIC_LIBRARY target SaltnPepperEngine
+# Link build statements for EXECUTABLE target SaltnPepperEngine
 
 
 #############################################
-# Link the static library SaltnPepperEngine\SaltnPepperEngine.lib
+# Link the executable SaltnPepperEngine\SaltnPepperEngine.exe
 
-build SaltnPepperEngine\SaltnPepperEngine.lib: CXX_STATIC_LIBRARY_LINKER__SaltnPepperEngine_Debug SaltnPepperEngine\CMakeFiles\SaltnPepperEngine.dir\SaltnPepperEngine.cpp.obj
-  LANGUAGE_COMPILE_FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Ob0 /Od /RTC1 -ZI
-  LINK_FLAGS = /machine:x64
+build SaltnPepperEngine\SaltnPepperEngine.exe: CXX_EXECUTABLE_LINKER__SaltnPepperEngine_Debug SaltnPepperEngine\CMakeFiles\SaltnPepperEngine.dir\SaltnPepperEngine.cpp.obj
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Ob0 /Od /RTC1 -ZI
+  LINK_FLAGS = /machine:x64 /debug /INCREMENTAL /subsystem:console
+  LINK_LIBRARIES = kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib
   OBJECT_DIR = SaltnPepperEngine\CMakeFiles\SaltnPepperEngine.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_COMPILE_PDB = SaltnPepperEngine\CMakeFiles\SaltnPepperEngine.dir\SaltnPepperEngine.pdb
-  TARGET_FILE = SaltnPepperEngine\SaltnPepperEngine.lib
+  TARGET_COMPILE_PDB = SaltnPepperEngine\CMakeFiles\SaltnPepperEngine.dir\
+  TARGET_FILE = SaltnPepperEngine\SaltnPepperEngine.exe
+  TARGET_IMPLIB = SaltnPepperEngine\SaltnPepperEngine.lib
   TARGET_PDB = SaltnPepperEngine\SaltnPepperEngine.pdb
 
 
@@ -193,9 +195,9 @@ build SaltnPepperRuntime\rebuild_cache: phony SaltnPepperRuntime\CMakeFiles\rebu
 # =============================================================================
 # Target aliases.
 
-build SaltnPepperEngine: phony SaltnPepperEngine\SaltnPepperEngine.lib
+build SaltnPepperEngine: phony SaltnPepperEngine\SaltnPepperEngine.exe
 
-build SaltnPepperEngine.lib: phony SaltnPepperEngine\SaltnPepperEngine.lib
+build SaltnPepperEngine.exe: phony SaltnPepperEngine\SaltnPepperEngine.exe
 
 build SaltnPepperRuntime: phony SaltnPepperRuntime\SaltnPepperRuntime.exe
 
@@ -216,7 +218,7 @@ build all: phony SaltnPepperEngine\all SaltnPepperRuntime\all
 #############################################
 # Folder: D:/GameEngineStuff/SaltnPepper/out/build/x64-debug/SaltnPepperEngine
 
-build SaltnPepperEngine\all: phony SaltnPepperEngine\SaltnPepperEngine.lib
+build SaltnPepperEngine\all: phony SaltnPepperEngine\SaltnPepperEngine.exe
 
 # =============================================================================
 

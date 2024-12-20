@@ -1,18 +1,11 @@
 {
-	"archive" : 
-	{
-		"commandFragments" : 
-		[
-			{
-				"fragment" : "/machine:x64",
-				"role" : "flags"
-			}
-		]
-	},
 	"artifacts" : 
 	[
 		{
-			"path" : "SaltnPepperEngine/SaltnPepperEngine.lib"
+			"path" : "SaltnPepperEngine/SaltnPepperEngine.exe"
+		},
+		{
+			"path" : "SaltnPepperEngine/SaltnPepperEngine.pdb"
 		}
 	],
 	"backtrace" : 1,
@@ -20,9 +13,9 @@
 	{
 		"commands" : 
 		[
-			"add_library",
-			"INCLUDE_DIRECTORIES",
-			"set_property"
+			"ADD_EXECUTABLE",
+			"TARGET_INCLUDE_DIRECTORIES",
+			"SET_PROPERTY"
 		],
 		"files" : 
 		[
@@ -36,7 +29,7 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 6,
+				"line" : 7,
 				"parent" : 0
 			},
 			{
@@ -46,9 +39,15 @@
 				"parent" : 0
 			},
 			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 22,
+				"parent" : 0
+			},
+			{
 				"command" : 2,
 				"file" : 0,
-				"line" : 9,
+				"line" : 10,
 				"parent" : 0
 			}
 		]
@@ -66,7 +65,11 @@
 			[
 				{
 					"backtrace" : 2,
-					"path" : "/spdlog"
+					"path" : "D:/GameEngineStuff/SaltnPepper/SaltnPepperEngine/Externals"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "D:/GameEngineStuff/SaltnPepper/SaltnPepperEngine/Engine"
 				}
 			],
 			"language" : "CXX",
@@ -74,7 +77,7 @@
 			{
 				"backtraces" : 
 				[
-					3
+					4
 				],
 				"standard" : "20"
 			},
@@ -85,8 +88,27 @@
 		}
 	],
 	"id" : "SaltnPepperEngine::@54b288ea1210970ff85d",
+	"link" : 
+	{
+		"commandFragments" : 
+		[
+			{
+				"fragment" : "/DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Ob0 /Od /RTC1 -ZI",
+				"role" : "flags"
+			},
+			{
+				"fragment" : "/machine:x64 /debug /INCREMENTAL /subsystem:console",
+				"role" : "flags"
+			},
+			{
+				"fragment" : "kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib",
+				"role" : "libraries"
+			}
+		],
+		"language" : "CXX"
+	},
 	"name" : "SaltnPepperEngine",
-	"nameOnDisk" : "SaltnPepperEngine.lib",
+	"nameOnDisk" : "SaltnPepperEngine.exe",
 	"paths" : 
 	{
 		"build" : "SaltnPepperEngine",
@@ -123,5 +145,5 @@
 			"sourceGroupIndex" : 1
 		}
 	],
-	"type" : "STATIC_LIBRARY"
+	"type" : "EXECUTABLE"
 }

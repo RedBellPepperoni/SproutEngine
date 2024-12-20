@@ -4,5 +4,5 @@
 #pragma once
 
 #include <iostream>
-
+#include <Utilities/Logging/Log.hpp>
 // TODO: Reference additional headers your program requires here.
