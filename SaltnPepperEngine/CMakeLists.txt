@@ -10,3 +10,12 @@ if (CMAKE_VERSION VERSION_GREATER 3.12)
 endif()
 
 # TODO: Add tests and install targets if needed.
+
+
+# include Paths for External Headers
+TARGET_INCLUDE_DIRECTORIES(SaltnPepperEngine PUBLIC ${EXTERNAL_DIRECTORY})
+TARGET_INCLUDE_DIRECTORIES(SaltnPepperEngine PUBLIC ${ENGINE_DIRECTORY})
+
+INCLUDE_DIRECTORIES(${EXTERNAL_DIRECTORY}/spdlog)
+
+#SUBDIRS(${CMAKE_CURRENT_SOURCE_DIR}/SaltnPepperEngine/Externals/spdlog)

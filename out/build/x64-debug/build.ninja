@@ -79,6 +79,7 @@ build cmake_object_order_depends_target_SaltnPepperEngine: phony || .
 
 build SaltnPepperEngine\CMakeFiles\SaltnPepperEngine.dir\SaltnPepperEngine.cpp.obj: CXX_COMPILER__SaltnPepperEngine_unscanned_Debug D$:\GameEngineStuff\SaltnPepper\SaltnPepperEngine\SaltnPepperEngine.cpp || cmake_object_order_depends_target_SaltnPepperEngine
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Ob0 /Od /RTC1 -std:c++20 -ZI
+  INCLUDES = -I\spdlog
   OBJECT_DIR = SaltnPepperEngine\CMakeFiles\SaltnPepperEngine.dir
   OBJECT_FILE_DIR = SaltnPepperEngine\CMakeFiles\SaltnPepperEngine.dir
   TARGET_COMPILE_PDB = SaltnPepperEngine\CMakeFiles\SaltnPepperEngine.dir\SaltnPepperEngine.pdb
