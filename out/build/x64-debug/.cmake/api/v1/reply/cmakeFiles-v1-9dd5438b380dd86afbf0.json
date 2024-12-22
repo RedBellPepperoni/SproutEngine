@@ -150,9 +150,6 @@
 			"path" : "SaltnPepperEngine/Externals/CMakeLists.txt"
 		},
 		{
-			"path" : "SaltnPepperEngine/Externals/spdlog/CMakeLists.txt"
-		},
-		{
 			"path" : "SaltnPepperRuntime/CMakeLists.txt"
 		}
 	],

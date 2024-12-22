@@ -97,8 +97,6 @@ namespace SaltnPepperEngine::Maths
 		return *this;
 	}
 
-	
-
 
 	
 	inline bool Vector2::operator==(const Vector2& _vector) const noexcept
@@ -129,6 +127,7 @@ namespace SaltnPepperEngine::Maths
 		return *this;
 	}
 
+	
 	float Vector2::Length() const noexcept
 	{
 		using namespace DirectX;
@@ -166,11 +165,10 @@ namespace SaltnPepperEngine::Maths
 		
 	}
 
+	// Cannot Inline this for some weird reason
+	
 
-
-
-
-	inline Vector2 operator+(const Vector2& _firstVector, const Vector2& _secondVector) noexcept
+	Vector2 operator+(const Vector2& _firstVector, const Vector2& _secondVector) noexcept
 	{
 		using namespace DirectX;
 		const XMVECTOR vectorOne = XMLoadFloat2(&_firstVector);
@@ -181,7 +179,8 @@ namespace SaltnPepperEngine::Maths
 		return finalVector;
 	}
 
-	inline Vector2 operator-(const Vector2& _firstVector, const Vector2& _secondVector) noexcept
+	// Cannot Inline this for some weird reason
+	Vector2 operator-(const Vector2& _firstVector, const Vector2& _secondVector) noexcept
 	{
 		using namespace DirectX;
 		const XMVECTOR vectorOne = XMLoadFloat2(&_firstVector);
@@ -192,7 +191,7 @@ namespace SaltnPepperEngine::Maths
 		return finalVector;
 	}
 
-	inline Vector2 operator*(const Vector2& _firstVector, const Vector2& _secondVector) noexcept
+	Vector2 operator*(const Vector2& _firstVector, const Vector2& _secondVector) noexcept
 	{
 		using namespace DirectX;
 		const XMVECTOR vectorOne = XMLoadFloat2(&_firstVector);
@@ -214,7 +213,7 @@ namespace SaltnPepperEngine::Maths
 		return finalVector;
 	}
 
-	inline Vector2 operator/(const Vector2& _firstVector, const Vector2& _secondVector) noexcept
+	Vector2 operator/(const Vector2& _firstVector, const Vector2& _secondVector) noexcept
 	{
 		using namespace DirectX;
 		const XMVECTOR vectorOne = XMLoadFloat2(&_firstVector);

@@ -9,7 +9,7 @@
 					"childIndexes" : 
 					[
 						1,
-						5
+						4
 					],
 					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
 					"minimumCMakeVersion" : 
@@ -52,10 +52,6 @@
 				},
 				{
 					"build" : "SaltnPepperEngine/Externals",
-					"childIndexes" : 
-					[
-						4
-					],
 					"jsonFile" : "directory-SaltnPepperEngine.Externals-Debug-229d0f3422c408546730.json",
 					"minimumCMakeVersion" : 
 					{
@@ -64,17 +60,6 @@
 					"parentIndex" : 1,
 					"projectIndex" : 0,
 					"source" : "SaltnPepperEngine/Externals"
-				},
-				{
-					"build" : "SaltnPepperEngine/Externals/spdlog",
-					"jsonFile" : "directory-SaltnPepperEngine.Externals.spdlog-Debug-d57e42198d12e67ae40b.json",
-					"minimumCMakeVersion" : 
-					{
-						"string" : "3.8"
-					},
-					"parentIndex" : 3,
-					"projectIndex" : 0,
-					"source" : "SaltnPepperEngine/Externals/spdlog"
 				},
 				{
 					"build" : "SaltnPepperRuntime",
@@ -102,8 +87,7 @@
 						1,
 						2,
 						3,
-						4,
-						5
+						4
 					],
 					"name" : "SaltnPepper",
 					"targetIndexes" : 
@@ -118,12 +102,12 @@
 				{
 					"directoryIndex" : 1,
 					"id" : "SaltnPepperEngine::@54b288ea1210970ff85d",
-					"jsonFile" : "target-SaltnPepperEngine-Debug-c04d987877becb228603.json",
+					"jsonFile" : "target-SaltnPepperEngine-Debug-ec95f2eee091539618a0.json",
 					"name" : "SaltnPepperEngine",
 					"projectIndex" : 0
 				},
 				{
-					"directoryIndex" : 5,
+					"directoryIndex" : 4,
 					"id" : "SaltnPepperRuntime::@fc009cef3499d093e52f",
 					"jsonFile" : "target-SaltnPepperRuntime-Debug-dd1a1884c743e152fb28.json",
 					"name" : "SaltnPepperRuntime",

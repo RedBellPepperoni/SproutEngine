@@ -15,13 +15,19 @@ int main()
 	LOG_WARN("WARNING Log");
 	LOG_ERROR("ERROR Log");
 
-	/*Maths::Vector2 vecOne = Maths::Vector2(1.0f);
-	Maths::Vector2 vecTwo = Maths::Vector2(2.0f,0.0f);
-	Maths::Vector2 result = vecOne + vecTwo;*/
+	/*;
+	
+	;*/
 
 	//printf("The Result is : [%f , %f]", vecOne.x, vecOne.y);
 
-
+	Maths::Vector2 vecOne = Maths::Vector2{ 1.0f };
+	Maths::Vector2 vecTwo = Maths::Vector2(2.0f, 0.0f);
+	
+	Maths::Vector2 newVec = vecOne * 2.0f;
+	Maths::Vector2 newVec2 = ( - vecOne * (vecTwo) * 0 ) + vecOne;
+	
+	LOG_WARN("VECTOR MUL : [{0} , {1}]", newVec2.x, newVec2.y);
 
 	return 0;
 }

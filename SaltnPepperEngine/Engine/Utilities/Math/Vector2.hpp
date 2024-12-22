@@ -53,7 +53,12 @@ namespace SaltnPepperEngine
 			constexpr explicit Vector2(float _xValue, float _yValue) noexcept : XMFLOAT2(_xValue, _yValue) {}
 
 			Vector2(const Vector2&) = default;
+			Vector2& operator=(const Vector2&) = default;
+
 			Vector2(Vector2&&) = default;
+			Vector2& operator=(Vector2&&) = default;
+
+			operator XMVECTOR() const noexcept { return XMLoadFloat2(this); }
 
 			Vector2(const XMFLOAT2& _xmFloat) noexcept 
 			{ 
@@ -73,7 +78,7 @@ namespace SaltnPepperEngine
 			}
 
 			
-			// Arithmatic
+			/// Arithmatic
 			Vector2& operator+= (const Vector2& _vector) noexcept;
 			Vector2& operator-= (const Vector2& _vector) noexcept;
 			Vector2& operator*= (const Vector2& _vector) noexcept;
@@ -83,13 +88,23 @@ namespace SaltnPepperEngine
 			Vector2& operator*= (const float _float) noexcept;
 			Vector2& operator/= (const float _float) noexcept;
 
-			// Comparisons
+			/// Comparisons
 			bool operator== (const Vector2& _vector) const noexcept;
 			bool operator!= (const Vector2& _vector) const noexcept;
 
-			// Negative Value
+			/// Negative Value
 			Vector2 operator- () const noexcept;
 			Vector2 operator+ () const noexcept;
+
+	
+			/// Free-Standing Operators for Left Handeded Operations
+			friend Vector2 operator+ (const Vector2& _firstVector, const Vector2& _secondVector) noexcept;
+			friend Vector2 operator- (const Vector2& _firstVector, const Vector2& _secondVector) noexcept;
+			friend Vector2 operator* (const Vector2& _firstVector, const Vector2& _secondVector) noexcept;
+			friend Vector2 operator* (const Vector2& _firstVector, const float _float) noexcept;
+			friend Vector2 operator/ (const Vector2& _firstVector, const Vector2& _secondVector) noexcept;
+			friend Vector2 operator/ (const Vector2& _firstVector, const float _float) noexcept;
+			/// End of Free Standing Fucntions
 
 			float Length() const noexcept;
 			float LengthSquared() const noexcept;
@@ -103,14 +118,7 @@ namespace SaltnPepperEngine
 		};
 
 
-		/// Free-Standing Operators for Left Handeded Operations
-
-		Vector2 operator+ (const Vector2& _firstVector, const Vector2& _secondVector) noexcept;
-		Vector2 operator- (const Vector2& _firstVector, const Vector2& _secondVector) noexcept;
-		Vector2 operator* (const Vector2& _firstVector, const Vector2& _secondVector) noexcept;
-		Vector2 operator* (const Vector2& _firstVector, const float _float) noexcept;
-		Vector2 operator/ (const Vector2& _firstVector, const Vector2& _secondVector) noexcept;
-		Vector2 operator/ (const Vector2& _firstVector, const float _float) noexcept;
+		
 
 	}
 }

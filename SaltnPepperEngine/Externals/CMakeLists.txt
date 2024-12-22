@@ -1,1 +1,2 @@
-ADD_SUBDIRECTORY(spdlog)
+#ADD_SUBDIRECTORY(spdlog)
+#ADD_SUBDIRECTORY(DirectXHeaders)

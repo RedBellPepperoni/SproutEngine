@@ -196,6 +196,15 @@ CMAKE_STATIC_LINKER_FLAGS_RELWITHDEBINFO:STRING=
 CMAKE_VERBOSE_MAKEFILE:BOOL=FALSE
 
 //Value Computed by CMake
+SaltnPepperEngine_BINARY_DIR:STATIC=D:/GameEngineStuff/SaltnPepper/out/build/x64-debug/SaltnPepperEngine
+
+//Value Computed by CMake
+SaltnPepperEngine_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+SaltnPepperEngine_SOURCE_DIR:STATIC=D:/GameEngineStuff/SaltnPepper/SaltnPepperEngine
+
+//Value Computed by CMake
 SaltnPepper_BINARY_DIR:STATIC=D:/GameEngineStuff/SaltnPepper/out/build/x64-debug
 
 //Value Computed by CMake
@@ -295,7 +304,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_MT
 CMAKE_MT-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=6
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=5
 //Platform information initialized
 CMAKE_PLATFORM_INFO_INITIALIZED:INTERNAL=1
 //noop for ranlib
