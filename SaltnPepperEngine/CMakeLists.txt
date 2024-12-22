@@ -4,7 +4,7 @@
 
 # Add source to this project's executable.
 #add_library (SaltnPepperEngine "SaltnPepperEngine.cpp" "SaltnPepperEngine.h")
-ADD_EXECUTABLE (SaltnPepperEngine "SaltnPepperEngine.cpp" "SaltnPepperEngine.h")
+ADD_EXECUTABLE (SaltnPepperEngine "SaltnPepperEngine.cpp" "SaltnPepperEngine.h" "Engine/Utilities/Math/Vector2.cpp")
 
 if (CMAKE_VERSION VERSION_GREATER 3.12)
   SET_PROPERTY(TARGET SaltnPepperEngine PROPERTY CXX_STANDARD 20)
