@@ -9,7 +9,7 @@
 					"childIndexes" : 
 					[
 						1,
-						2
+						5
 					],
 					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
 					"minimumCMakeVersion" : 
@@ -21,6 +21,11 @@
 				},
 				{
 					"build" : "SaltnPepperEngine",
+					"childIndexes" : 
+					[
+						2,
+						3
+					],
 					"jsonFile" : "directory-SaltnPepperEngine-Debug-38759c8fa2e6b57251b8.json",
 					"minimumCMakeVersion" : 
 					{
@@ -33,6 +38,43 @@
 					[
 						0
 					]
+				},
+				{
+					"build" : "SaltnPepperEngine/Engine",
+					"jsonFile" : "directory-SaltnPepperEngine.Engine-Debug-993d2e069242fed1232f.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.8"
+					},
+					"parentIndex" : 1,
+					"projectIndex" : 0,
+					"source" : "SaltnPepperEngine/Engine"
+				},
+				{
+					"build" : "SaltnPepperEngine/Externals",
+					"childIndexes" : 
+					[
+						4
+					],
+					"jsonFile" : "directory-SaltnPepperEngine.Externals-Debug-229d0f3422c408546730.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.8"
+					},
+					"parentIndex" : 1,
+					"projectIndex" : 0,
+					"source" : "SaltnPepperEngine/Externals"
+				},
+				{
+					"build" : "SaltnPepperEngine/Externals/spdlog",
+					"jsonFile" : "directory-SaltnPepperEngine.Externals.spdlog-Debug-d57e42198d12e67ae40b.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.8"
+					},
+					"parentIndex" : 3,
+					"projectIndex" : 0,
+					"source" : "SaltnPepperEngine/Externals/spdlog"
 				},
 				{
 					"build" : "SaltnPepperRuntime",
@@ -58,7 +100,10 @@
 					[
 						0,
 						1,
-						2
+						2,
+						3,
+						4,
+						5
 					],
 					"name" : "SaltnPepper",
 					"targetIndexes" : 
@@ -73,12 +118,12 @@
 				{
 					"directoryIndex" : 1,
 					"id" : "SaltnPepperEngine::@54b288ea1210970ff85d",
-					"jsonFile" : "target-SaltnPepperEngine-Debug-aff4de625efa5edd4846.json",
+					"jsonFile" : "target-SaltnPepperEngine-Debug-c04d987877becb228603.json",
 					"name" : "SaltnPepperEngine",
 					"projectIndex" : 0
 				},
 				{
-					"directoryIndex" : 2,
+					"directoryIndex" : 5,
 					"id" : "SaltnPepperRuntime::@fc009cef3499d093e52f",
 					"jsonFile" : "target-SaltnPepperRuntime-Debug-dd1a1884c743e152fb28.json",
 					"name" : "SaltnPepperRuntime",

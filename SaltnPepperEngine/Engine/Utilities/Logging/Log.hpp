@@ -63,7 +63,7 @@ namespace SaltnPepperEngine
 	namespace Debug
 	{
 
-        class SNP_API Log
+        class Log
         {
         public:
 

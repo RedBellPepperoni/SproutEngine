@@ -78,18 +78,18 @@ build rebuild_cache: phony CMakeFiles\rebuild_cache.util
 build cmake_object_order_depends_target_SaltnPepperEngine: phony || .
 
 build SaltnPepperEngine\CMakeFiles\SaltnPepperEngine.dir\SaltnPepperEngine.cpp.obj: CXX_COMPILER__SaltnPepperEngine_unscanned_Debug D$:\GameEngineStuff\SaltnPepper\SaltnPepperEngine\SaltnPepperEngine.cpp || cmake_object_order_depends_target_SaltnPepperEngine
-  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Ob0 /Od /RTC1 -std:c++20 -ZI
+  FLAGS = /utf-8 /MDd /Ob0 /Od /RTC1 -std:c++20 -ZI
   INCLUDES = -ID:\GameEngineStuff\SaltnPepper\SaltnPepperEngine\Externals -ID:\GameEngineStuff\SaltnPepper\SaltnPepperEngine\Engine
   OBJECT_DIR = SaltnPepperEngine\CMakeFiles\SaltnPepperEngine.dir
   OBJECT_FILE_DIR = SaltnPepperEngine\CMakeFiles\SaltnPepperEngine.dir
   TARGET_COMPILE_PDB = SaltnPepperEngine\CMakeFiles\SaltnPepperEngine.dir\
   TARGET_PDB = SaltnPepperEngine\SaltnPepperEngine.pdb
 
-build SaltnPepperEngine\CMakeFiles\SaltnPepperEngine.dir\Engine\Utilities\Math\Vector2.cpp.obj: CXX_COMPILER__SaltnPepperEngine_unscanned_Debug D$:\GameEngineStuff\SaltnPepper\SaltnPepperEngine\Engine\Utilities\Math\Vector2.cpp || cmake_object_order_depends_target_SaltnPepperEngine
-  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Ob0 /Od /RTC1 -std:c++20 -ZI
+build SaltnPepperEngine\CMakeFiles\SaltnPepperEngine.dir\Engine\Utilities\Logging\Log.cpp.obj: CXX_COMPILER__SaltnPepperEngine_unscanned_Debug D$:\GameEngineStuff\SaltnPepper\SaltnPepperEngine\Engine\Utilities\Logging\Log.cpp || cmake_object_order_depends_target_SaltnPepperEngine
+  FLAGS = /utf-8 /MDd /Ob0 /Od /RTC1 -std:c++20 -ZI
   INCLUDES = -ID:\GameEngineStuff\SaltnPepper\SaltnPepperEngine\Externals -ID:\GameEngineStuff\SaltnPepper\SaltnPepperEngine\Engine
   OBJECT_DIR = SaltnPepperEngine\CMakeFiles\SaltnPepperEngine.dir
-  OBJECT_FILE_DIR = SaltnPepperEngine\CMakeFiles\SaltnPepperEngine.dir\Engine\Utilities\Math
+  OBJECT_FILE_DIR = SaltnPepperEngine\CMakeFiles\SaltnPepperEngine.dir\Engine\Utilities\Logging
   TARGET_COMPILE_PDB = SaltnPepperEngine\CMakeFiles\SaltnPepperEngine.dir\
   TARGET_PDB = SaltnPepperEngine\SaltnPepperEngine.pdb
 
@@ -101,8 +101,8 @@ build SaltnPepperEngine\CMakeFiles\SaltnPepperEngine.dir\Engine\Utilities\Math\V
 #############################################
 # Link the executable SaltnPepperEngine\SaltnPepperEngine.exe
 
-build SaltnPepperEngine\SaltnPepperEngine.exe: CXX_EXECUTABLE_LINKER__SaltnPepperEngine_Debug SaltnPepperEngine\CMakeFiles\SaltnPepperEngine.dir\SaltnPepperEngine.cpp.obj SaltnPepperEngine\CMakeFiles\SaltnPepperEngine.dir\Engine\Utilities\Math\Vector2.cpp.obj
-  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Ob0 /Od /RTC1 -ZI
+build SaltnPepperEngine\SaltnPepperEngine.exe: CXX_EXECUTABLE_LINKER__SaltnPepperEngine_Debug SaltnPepperEngine\CMakeFiles\SaltnPepperEngine.dir\SaltnPepperEngine.cpp.obj SaltnPepperEngine\CMakeFiles\SaltnPepperEngine.dir\Engine\Utilities\Logging\Log.cpp.obj
+  FLAGS = /utf-8 /MDd /Ob0 /Od /RTC1 -ZI
   LINK_FLAGS = /machine:x64 /debug /INCREMENTAL /subsystem:console
   LINK_LIBRARIES = kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib
   OBJECT_DIR = SaltnPepperEngine\CMakeFiles\SaltnPepperEngine.dir
@@ -135,6 +135,90 @@ build SaltnPepperEngine\CMakeFiles\rebuild_cache.util: CUSTOM_COMMAND
   restat = 1
 
 build SaltnPepperEngine\rebuild_cache: phony SaltnPepperEngine\CMakeFiles\rebuild_cache.util
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# D:/GameEngineStuff/SaltnPepper/SaltnPepperEngine/CMakeLists.txt
+# =============================================================================
+
+
+#############################################
+# Utility command for edit_cache
+
+build SaltnPepperEngine\Engine\CMakeFiles\edit_cache.util: CUSTOM_COMMAND
+  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D D:\GameEngineStuff\SaltnPepper\out\build\x64-debug\SaltnPepperEngine\Engine && "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build SaltnPepperEngine\Engine\edit_cache: phony SaltnPepperEngine\Engine\CMakeFiles\edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build SaltnPepperEngine\Engine\CMakeFiles\rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D D:\GameEngineStuff\SaltnPepper\out\build\x64-debug\SaltnPepperEngine\Engine && "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" --regenerate-during-build -SD:\GameEngineStuff\SaltnPepper -BD:\GameEngineStuff\SaltnPepper\out\build\x64-debug"
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build SaltnPepperEngine\Engine\rebuild_cache: phony SaltnPepperEngine\Engine\CMakeFiles\rebuild_cache.util
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# D:/GameEngineStuff/SaltnPepper/SaltnPepperEngine/CMakeLists.txt
+# =============================================================================
+
+
+#############################################
+# Utility command for edit_cache
+
+build SaltnPepperEngine\Externals\CMakeFiles\edit_cache.util: CUSTOM_COMMAND
+  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D D:\GameEngineStuff\SaltnPepper\out\build\x64-debug\SaltnPepperEngine\Externals && "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build SaltnPepperEngine\Externals\edit_cache: phony SaltnPepperEngine\Externals\CMakeFiles\edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build SaltnPepperEngine\Externals\CMakeFiles\rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D D:\GameEngineStuff\SaltnPepper\out\build\x64-debug\SaltnPepperEngine\Externals && "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" --regenerate-during-build -SD:\GameEngineStuff\SaltnPepper -BD:\GameEngineStuff\SaltnPepper\out\build\x64-debug"
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build SaltnPepperEngine\Externals\rebuild_cache: phony SaltnPepperEngine\Externals\CMakeFiles\rebuild_cache.util
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# D:/GameEngineStuff/SaltnPepper/SaltnPepperEngine/Externals/CMakeLists.txt
+# =============================================================================
+
+
+#############################################
+# Utility command for edit_cache
+
+build SaltnPepperEngine\Externals\spdlog\CMakeFiles\edit_cache.util: CUSTOM_COMMAND
+  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D D:\GameEngineStuff\SaltnPepper\out\build\x64-debug\SaltnPepperEngine\Externals\spdlog && "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build SaltnPepperEngine\Externals\spdlog\edit_cache: phony SaltnPepperEngine\Externals\spdlog\CMakeFiles\edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build SaltnPepperEngine\Externals\spdlog\CMakeFiles\rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D D:\GameEngineStuff\SaltnPepper\out\build\x64-debug\SaltnPepperEngine\Externals\spdlog && "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" --regenerate-during-build -SD:\GameEngineStuff\SaltnPepper -BD:\GameEngineStuff\SaltnPepper\out\build\x64-debug"
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build SaltnPepperEngine\Externals\spdlog\rebuild_cache: phony SaltnPepperEngine\Externals\spdlog\CMakeFiles\rebuild_cache.util
 
 # =============================================================================
 # Write statements declared in CMakeLists.txt:
@@ -226,7 +310,28 @@ build all: phony SaltnPepperEngine\all SaltnPepperRuntime\all
 #############################################
 # Folder: D:/GameEngineStuff/SaltnPepper/out/build/x64-debug/SaltnPepperEngine
 
-build SaltnPepperEngine\all: phony SaltnPepperEngine\SaltnPepperEngine.exe
+build SaltnPepperEngine\all: phony SaltnPepperEngine\SaltnPepperEngine.exe SaltnPepperEngine\Engine\all SaltnPepperEngine\Externals\all
+
+# =============================================================================
+
+#############################################
+# Folder: D:/GameEngineStuff/SaltnPepper/out/build/x64-debug/SaltnPepperEngine/Engine
+
+build SaltnPepperEngine\Engine\all: phony
+
+# =============================================================================
+
+#############################################
+# Folder: D:/GameEngineStuff/SaltnPepper/out/build/x64-debug/SaltnPepperEngine/Externals
+
+build SaltnPepperEngine\Externals\all: phony SaltnPepperEngine\Externals\spdlog\all
+
+# =============================================================================
+
+#############################################
+# Folder: D:/GameEngineStuff/SaltnPepper/out/build/x64-debug/SaltnPepperEngine/Externals/spdlog
+
+build SaltnPepperEngine\Externals\spdlog\all: phony
 
 # =============================================================================
 
@@ -242,14 +347,14 @@ build SaltnPepperRuntime\all: phony SaltnPepperRuntime\SaltnPepperRuntime.exe
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja: RERUN_CMAKE | C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\CMakeCInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\CMakeCXXInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\CMakeCommonLanguageInclude.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\CMakeGenericSystem.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\CMakeInitializeConfigs.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\CMakeLanguageInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\CMakeRCInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\CMakeSystemSpecificInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\CMakeSystemSpecificInitialize.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\Compiler\CMakeCommonCompilerMacros.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\Compiler\MSVC-C.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\Compiler\MSVC-CXX.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\Compiler\MSVC.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\Platform\Windows-Initialize.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\Platform\Windows-MSVC-C.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\Platform\Windows-MSVC-CXX.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\Platform\Windows-MSVC.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\Platform\Windows.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\Platform\WindowsPaths.cmake CMakeCache.txt CMakeFiles\3.29.5-msvc4\CMakeCCompiler.cmake CMakeFiles\3.29.5-msvc4\CMakeCXXCompiler.cmake CMakeFiles\3.29.5-msvc4\CMakeRCCompiler.cmake CMakeFiles\3.29.5-msvc4\CMakeSystem.cmake D$:\GameEngineStuff\SaltnPepper\CMakeLists.txt D$:\GameEngineStuff\SaltnPepper\SaltnPepperEngine\CMakeLists.txt D$:\GameEngineStuff\SaltnPepper\SaltnPepperRuntime\CMakeLists.txt
+build build.ninja: RERUN_CMAKE | C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\CMakeCInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\CMakeCXXInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\CMakeCommonLanguageInclude.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\CMakeGenericSystem.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\CMakeInitializeConfigs.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\CMakeLanguageInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\CMakeRCInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\CMakeSystemSpecificInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\CMakeSystemSpecificInitialize.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\Compiler\CMakeCommonCompilerMacros.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\Compiler\MSVC-C.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\Compiler\MSVC-CXX.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\Compiler\MSVC.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\Platform\Windows-Initialize.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\Platform\Windows-MSVC-C.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\Platform\Windows-MSVC-CXX.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\Platform\Windows-MSVC.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\Platform\Windows.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\Platform\WindowsPaths.cmake CMakeCache.txt CMakeFiles\3.29.5-msvc4\CMakeCCompiler.cmake CMakeFiles\3.29.5-msvc4\CMakeCXXCompiler.cmake CMakeFiles\3.29.5-msvc4\CMakeRCCompiler.cmake CMakeFiles\3.29.5-msvc4\CMakeSystem.cmake D$:\GameEngineStuff\SaltnPepper\CMakeLists.txt D$:\GameEngineStuff\SaltnPepper\SaltnPepperEngine\CMakeLists.txt D$:\GameEngineStuff\SaltnPepper\SaltnPepperEngine\Engine\CMakeLists.txt D$:\GameEngineStuff\SaltnPepper\SaltnPepperEngine\Externals\CMakeLists.txt D$:\GameEngineStuff\SaltnPepper\SaltnPepperEngine\Externals\spdlog\CMakeLists.txt D$:\GameEngineStuff\SaltnPepper\SaltnPepperRuntime\CMakeLists.txt
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\CMakeCInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\CMakeCXXInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\CMakeCommonLanguageInclude.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\CMakeGenericSystem.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\CMakeInitializeConfigs.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\CMakeLanguageInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\CMakeRCInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\CMakeSystemSpecificInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\CMakeSystemSpecificInitialize.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\Compiler\CMakeCommonCompilerMacros.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\Compiler\MSVC-C.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\Compiler\MSVC-CXX.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\Compiler\MSVC.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\Platform\Windows-Initialize.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\Platform\Windows-MSVC-C.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\Platform\Windows-MSVC-CXX.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\Platform\Windows-MSVC.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\Platform\Windows.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\Platform\WindowsPaths.cmake CMakeCache.txt CMakeFiles\3.29.5-msvc4\CMakeCCompiler.cmake CMakeFiles\3.29.5-msvc4\CMakeCXXCompiler.cmake CMakeFiles\3.29.5-msvc4\CMakeRCCompiler.cmake CMakeFiles\3.29.5-msvc4\CMakeSystem.cmake D$:\GameEngineStuff\SaltnPepper\CMakeLists.txt D$:\GameEngineStuff\SaltnPepper\SaltnPepperEngine\CMakeLists.txt D$:\GameEngineStuff\SaltnPepper\SaltnPepperRuntime\CMakeLists.txt: phony
+build C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\CMakeCInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\CMakeCXXInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\CMakeCommonLanguageInclude.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\CMakeGenericSystem.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\CMakeInitializeConfigs.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\CMakeLanguageInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\CMakeRCInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\CMakeSystemSpecificInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\CMakeSystemSpecificInitialize.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\Compiler\CMakeCommonCompilerMacros.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\Compiler\MSVC-C.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\Compiler\MSVC-CXX.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\Compiler\MSVC.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\Platform\Windows-Initialize.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\Platform\Windows-MSVC-C.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\Platform\Windows-MSVC-CXX.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\Platform\Windows-MSVC.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\Platform\Windows.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\Platform\WindowsPaths.cmake CMakeCache.txt CMakeFiles\3.29.5-msvc4\CMakeCCompiler.cmake CMakeFiles\3.29.5-msvc4\CMakeCXXCompiler.cmake CMakeFiles\3.29.5-msvc4\CMakeRCCompiler.cmake CMakeFiles\3.29.5-msvc4\CMakeSystem.cmake D$:\GameEngineStuff\SaltnPepper\CMakeLists.txt D$:\GameEngineStuff\SaltnPepper\SaltnPepperEngine\CMakeLists.txt D$:\GameEngineStuff\SaltnPepper\SaltnPepperEngine\Engine\CMakeLists.txt D$:\GameEngineStuff\SaltnPepper\SaltnPepperEngine\Externals\CMakeLists.txt D$:\GameEngineStuff\SaltnPepper\SaltnPepperEngine\Externals\spdlog\CMakeLists.txt D$:\GameEngineStuff\SaltnPepper\SaltnPepperRuntime\CMakeLists.txt: phony
 
 
 #############################################
