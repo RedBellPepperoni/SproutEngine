@@ -104,8 +104,9 @@ namespace SaltnPepperEngine
 			friend Vector2 operator* (const Vector2& _firstVector, const float _float) noexcept;
 			friend Vector2 operator/ (const Vector2& _firstVector, const Vector2& _secondVector) noexcept;
 			friend Vector2 operator/ (const Vector2& _firstVector, const float _float) noexcept;
-			/// End of Free Standing Fucntions
 
+
+			/// Length and Distance Functions
 			float Length() const noexcept;
 			float LengthSquared() const noexcept;
 
@@ -113,8 +114,15 @@ namespace SaltnPepperEngine
 			static float DistanceSquared(const Vector2& _firstVector, const Vector2& _secondVector) noexcept;
 
 
+			/// Vector Algebra
 
+			float Dot(const Vector2& _otherVector) const noexcept;
+			float Cross(const Vector2& _otherVector) const noexcept;
 			
+
+			Vector2 PosMod(const float _posMod) const noexcept;
+			Vector2 PosModVector(const Vector2& _posModVector) const noexcept;
+
 		};
 
 

@@ -154,7 +154,7 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "SaltnPepperEngine/Engine/Utilities/Math/Vector2.cpp",
+			"path" : "SaltnPepperEngine/Engine/Utilities/Math/Vectors/Vector2.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
@@ -169,7 +169,7 @@
 		},
 		{
 			"backtrace" : 1,
-			"path" : "SaltnPepperEngine/Engine/Utilities/Math/Vector2.hpp",
+			"path" : "SaltnPepperEngine/Engine/Utilities/Math/Vectors/Vector2.hpp",
 			"sourceGroupIndex" : 1
 		}
 	],

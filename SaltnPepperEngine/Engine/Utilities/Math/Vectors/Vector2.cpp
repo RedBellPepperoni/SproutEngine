@@ -16,7 +16,8 @@
 **************************************************************************/
 
 
-#include <Utilities/Math/Vector2.hpp>
+#include <Utilities/Math/Vectors/Vector2.hpp>
+#include <Utilities/Logging/Log.hpp>
 
 
 namespace SaltnPepperEngine::Maths
@@ -163,6 +164,38 @@ namespace SaltnPepperEngine::Maths
 		const XMVECTOR finalVector = XMVector2LengthSq(vectorSubtract);
 		return XMVectorGetX(finalVector);
 		
+	}
+
+	float Vector2::Dot(const Vector2& _otherVector) const noexcept
+	{
+		using namespace DirectX;
+		const XMVECTOR thisvector = XMLoadFloat2(this);
+		const XMVECTOR otherVector = XMLoadFloat2(&_otherVector);
+		const XMVECTOR dotVector = XMVector2Dot(thisvector, otherVector);
+		return XMVectorGetX(dotVector);
+	}
+
+	float Vector2::Cross(const Vector2& _otherVector) const noexcept
+	{
+		using namespace DirectX;
+		const XMVECTOR thisvector = XMLoadFloat2(this);
+		const XMVECTOR otherVector = XMLoadFloat2(&_otherVector);
+		const XMVECTOR crossVector = XMVector2Cross(thisvector, otherVector);
+		return XMVectorGetX(crossVector);
+	}
+
+	Vector2 Vector2::PosMod(const float _posMod) const noexcept
+	{
+		
+		LOG_WARN("Function Not Created File :[{0}] Line:[{1}]",__FILE__, __LINE__);
+		return Vector2();
+	}
+
+	Vector2 Vector2::PosModVector(const Vector2& _posModVector) const noexcept
+	{
+
+		LOG_WARN("Function Not Created File :[{0}] Line:[{1}]",__FILE__, __LINE__);
+		return Vector2();
 	}
 
 	// Cannot Inline this for some weird reason
