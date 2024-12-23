@@ -1,19 +1,10 @@
 # ninja log v6
 18	188	7565421638634882	SaltnPepperRuntime/CMakeFiles/SaltnPepperRuntime.dir/SaltnPepperRuntime.cpp.obj	2f52eac5878b7d65
-2462	2628	7565927459709004	SaltnPepperEngine/SaltnPepperEngine.exe	a05f7fd83094b7e
+2572	2743	7566314070360871	SaltnPepperEngine/SaltnPepperEngine.exe	6811f433a8346663
 11	2507	7565905005930397	SaltnPepperEngine/CMakeFiles/SaltnPepperEngine.dir/Engine/Utilities/Logging/Log.cpp.obj	558711d51fbb47ba
 25	302	7565925616621852	SaltnPepperEngine/CMakeFiles/SaltnPepperEngine.dir/Engine/Utilities/Math/Vector2.cpp.obj	cb994436af03d856
 189	421	7565421640343164	SaltnPepperRuntime/SaltnPepperRuntime.exe	e7e2cb2159ca2009
-5	2461	7565927435146700	SaltnPepperEngine/CMakeFiles/SaltnPepperEngine.dir/SaltnPepperEngine.cpp.obj	d3687f22fe3531c5
-14	398	7565931328903389	SaltnPepperEngine/CMakeFiles/SaltnPepperEngine.dir/Engine/Utilities/Math/Vectors/Vector2.cpp.obj	1b87da0165682c07
-5	2539	7565931983863579	SaltnPepperEngine/CMakeFiles/SaltnPepperEngine.dir/SaltnPepperEngine.cpp.obj	d3687f22fe3531c5
-2540	2789	7565932009213238	SaltnPepperEngine/SaltnPepperEngine.exe	6811f433a8346663
-31	2931	7566203428737090	SaltnPepperEngine/CMakeFiles/SaltnPepperEngine.dir/SaltnPepperEngine.cpp.obj	d3687f22fe3531c5
-16	2859	7566203721891590	SaltnPepperEngine/CMakeFiles/SaltnPepperEngine.dir/Engine/Utilities/Math/Vectors/Vector2.cpp.obj	1b87da0165682c07
-2860	3126	7566203750322951	SaltnPepperEngine/SaltnPepperEngine.exe	6811f433a8346663
-17	2457	7566204008027768	SaltnPepperEngine/CMakeFiles/SaltnPepperEngine.dir/Engine/Utilities/Math/Vectors/Vector2.cpp.obj	1b87da0165682c07
-2458	2611	7566204032436648	SaltnPepperEngine/SaltnPepperEngine.exe	6811f433a8346663
+5	2572	7566314044689168	SaltnPepperEngine/CMakeFiles/SaltnPepperEngine.dir/SaltnPepperEngine.cpp.obj	d3687f22fe3531c5
 17	2489	7566204197969531	SaltnPepperEngine/CMakeFiles/SaltnPepperEngine.dir/Engine/Utilities/Math/Vectors/Vector2.cpp.obj	1b87da0165682c07
-2489	2644	7566204222697000	SaltnPepperEngine/SaltnPepperEngine.exe	6811f433a8346663
-5	2467	7566311159859072	SaltnPepperEngine/CMakeFiles/SaltnPepperEngine.dir/SaltnPepperEngine.cpp.obj	d3687f22fe3531c5
-2467	2673	7566311184474319	SaltnPepperEngine/SaltnPepperEngine.exe	6811f433a8346663
+15	3086	7566344385055672	SaltnPepperEngine/CMakeFiles/SaltnPepperEngine.dir/SaltnPepperEngine.cpp.obj	d3687f22fe3531c5
+3087	3248	7566344415769616	SaltnPepperEngine/SaltnPepperEngine.exe	6811f433a8346663

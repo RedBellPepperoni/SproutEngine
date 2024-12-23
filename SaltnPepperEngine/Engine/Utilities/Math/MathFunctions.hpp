@@ -71,11 +71,14 @@ namespace SaltnPepperEngine
 		static inline  float Sin   (float _value) { return	 XMScalarSin(_value); }
 		static inline  float Cos   (float _value) { return	 XMScalarCos(_value); }
 		static inline  float Tan   (float _value) { return ::tanf(_value); }
+
 		static inline  float SinH  (float _value) { return ::sinhf(_value); }
 		static inline  float CosH  (float _value) { return ::tanhf(_value); }
 		static inline  float TanH  (float _value) { return ::coshf(_value); }
+
 		static inline  float ASin  (float _value) { return	 XMScalarASin(_value); }
 		static inline  float ACos  (float _value) { return	 XMScalarACos(_value); }
+
 		static inline  float ATan  (float _value) { return ::atanf(_value); }
 		static inline  float ATan2 (float _valueY, float _valueX) { return ::atan2f(_valueY,_valueX); }
 
@@ -84,11 +87,15 @@ namespace SaltnPepperEngine
 		static inline  double Sin	(double _value) { return ::sin(_value); }
 		static inline  double Cos	(double _value) { return ::cos(_value); }
 		static inline  double Tan	(double _value) { return ::tan(_value); }
+
 		static inline  double SinH	(double _value) { return ::sinh(_value); }
 		static inline  double CosH	(double _value) { return ::tanh(_value); }
 		static inline  double TanH	(double _value) { return ::cosh(_value); }
-		static inline  double ASin	(double _value) { return ::asin(_value); }
-		static inline  double ACos	(double _value) { return ::acos(_value); }
+		
+		// Clamping the value 
+		static inline  double ASin	(double _value) { return (_value < -1) ? (-PI / 2) : ((_value > 1) ? (PI / 2) : ::asin(_value));}
+		static inline  double ACos	(double _value) { return (_value < -1) ? PI : ((_value > 1) ? 0 : ::acos(_value)); }
+
 		static inline  double ATan	(double _value) { return ::atanf(_value); }
 		static inline  double ATan2 (double _valueY, double _valueX) { return ::atan2f(_valueY, _valueX); }
 
