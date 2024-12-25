@@ -114,14 +114,36 @@ namespace SaltnPepperEngine
 			static float DistanceSquared(const Vector2& _firstVector, const Vector2& _secondVector) noexcept;
 
 
+			void Normalize() noexcept;
+			void Normalize(Vector2& _result) const noexcept;
+			
+
 			/// Vector Algebra
 
 			float Dot(const Vector2& _otherVector) const noexcept;
 			float Cross(const Vector2& _otherVector) const noexcept;
 			
 
-			Vector2 PosMod(const float _posMod) const noexcept;
-			Vector2 PosModVector(const Vector2& _posModVector) const noexcept;
+			static void Lerp(const Vector2& _vectorOne, const Vector2& _vectorTwo, float _lerpFactor, Vector2& _result) noexcept;
+			static Vector2 Lerp(const Vector2& _vectorOne, const Vector2& _vectorTwo, float _lerpFactor) noexcept;
+
+			static void Clamp(const Vector2& _vector, const Vector2& _vectorMin, const Vector2& _vectorMax, Vector2& _result) noexcept;
+			static Vector2 Clamp(const Vector2& _vector, const Vector2& _vectorMin, const Vector2& _vectorMax) noexcept;
+
+			static void Min(const Vector2& _vectorOne, const Vector2& _vectorTwo, Vector2& _result) noexcept;
+			static Vector2 Min(const Vector2& _vectorOne, const Vector2& _vectorTwo) noexcept;
+
+			static void Max(const Vector2& _vectorOne, const Vector2& _vectorTwo, Vector2& _result) noexcept;
+			static Vector2 Max(const Vector2& _vectorOne, const Vector2& _vectorTwo) noexcept;
+		
+			static void SmoothStep(const Vector2& _vectorOne, const Vector2& _vectorTwo, float _stepFactor, Vector2& _result) noexcept;
+			static Vector2 SmoothStep(const Vector2& _vectorOne, const Vector2& _vectorTwo, float _stepFactor) noexcept;
+			
+		
+
+			/// Vector reflection and refration
+
+			
 
 		};
 

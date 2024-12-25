@@ -166,7 +166,23 @@ namespace SaltnPepperEngine::Maths
 		
 	}
 
-	float Vector2::Dot(const Vector2& _otherVector) const noexcept
+	inline void Vector2::Normalize() noexcept
+	{
+		using namespace DirectX;
+		const XMVECTOR vectorThis = XMLoadFloat2(this);
+		const XMVECTOR normalizedVector = XMVector2Normalize(vectorThis);
+		XMStoreFloat2(this, normalizedVector);
+	}
+
+	inline void Vector2::Normalize(Vector2& _result) const noexcept
+	{
+		using namespace DirectX;
+		const XMVECTOR vectorThis = XMLoadFloat2(this);
+		const XMVECTOR normalizedVector = XMVector2Normalize(vectorThis);
+		XMStoreFloat2(&_result, normalizedVector);
+	}
+
+	inline float Vector2::Dot(const Vector2& _otherVector) const noexcept
 	{
 		using namespace DirectX;
 		const XMVECTOR thisvector = XMLoadFloat2(this);
@@ -175,7 +191,7 @@ namespace SaltnPepperEngine::Maths
 		return XMVectorGetX(dotVector);
 	}
 
-	float Vector2::Cross(const Vector2& _otherVector) const noexcept
+	inline float Vector2::Cross(const Vector2& _otherVector) const noexcept
 	{
 		using namespace DirectX;
 		const XMVECTOR thisvector = XMLoadFloat2(this);
@@ -184,19 +200,125 @@ namespace SaltnPepperEngine::Maths
 		return XMVectorGetX(crossVector);
 	}
 
-	Vector2 Vector2::PosMod(const float _posMod) const noexcept
+	inline void Vector2::Lerp(const Vector2& _vectorOne, const Vector2& _vectorTwo, float _lerpFactor, Vector2& _result) noexcept
 	{
+		using namespace DirectX;
+		const XMVECTOR vectorOne = XMLoadFloat2(&_vectorOne);
+		const XMVECTOR vectorTwo = XMLoadFloat2(&_vectorTwo);
+		const XMVECTOR lerpedVector = XMVectorLerp(vectorOne, vectorTwo, _lerpFactor);
+		XMStoreFloat2(&_result, lerpedVector);
+	}
+
+	inline Vector2 Vector2::Lerp(const Vector2& _vectorOne, const Vector2& _vectorTwo, float _lerpFactor) noexcept
+	{
+		using namespace DirectX;
+		const XMVECTOR vectorOne = XMLoadFloat2(&_vectorOne);
+		const XMVECTOR vectorTwo = XMLoadFloat2(&_vectorTwo);
+		const XMVECTOR lerpedVector = XMVectorLerp(vectorOne, vectorTwo, _lerpFactor);
 		
-		LOG_WARN("Function Not Created File :[{0}] Line:[{1}]",__FILE__, __LINE__);
-		return Vector2();
+		Vector2 result;
+		XMStoreFloat2(&result, lerpedVector);
+		return result;
 	}
 
-	Vector2 Vector2::PosModVector(const Vector2& _posModVector) const noexcept
+	inline void Vector2::Clamp(const Vector2& _vector, const Vector2& _vectorMin, const Vector2& _vectorMax, Vector2& _result) noexcept
+	{
+		using namespace DirectX;
+		const XMVECTOR vector = XMLoadFloat2(&_vector);
+		const XMVECTOR vectorMin = XMLoadFloat2(&_vectorMin);
+		const XMVECTOR vectorMax = XMLoadFloat2(&_vectorMax);
+		const XMVECTOR clampedVector = XMVectorClamp(_vector, _vectorMin, _vectorMax);
+		XMStoreFloat2(&_result, clampedVector);
+	}
+
+	inline Vector2 Vector2::Clamp(const Vector2& _vector, const Vector2& _vectorMin, const Vector2& _vectorMax) noexcept
+	{
+		using namespace DirectX;
+		const XMVECTOR vector = XMLoadFloat2(&_vector);
+		const XMVECTOR vectorMin = XMLoadFloat2(&_vectorMin);
+		const XMVECTOR vectorMax = XMLoadFloat2(&_vectorMax);
+		const XMVECTOR clampedVector = XMVectorClamp(_vector, _vectorMin, _vectorMax);
+
+		Vector2 result;
+		XMStoreFloat2(&result, clampedVector);
+		return result;
+	}
+
+
+	inline void Vector2::Min(const Vector2& _vectorOne, const Vector2& _vectorTwo, Vector2& _result) noexcept
+	{
+		using namespace DirectX;
+		const XMVECTOR vectorOne = XMLoadFloat2(&_vectorOne);
+		const XMVECTOR vectorTwo = XMLoadFloat2(&_vectorTwo);
+		const XMVECTOR minVector = XMVectorMin(vectorOne, vectorTwo);
+		XMStoreFloat2(&_result, minVector);
+	}
+
+	inline Vector2 Vector2::Min(const Vector2& _vectorOne, const Vector2& _vectorTwo) noexcept
+	{
+		using namespace DirectX;
+		const XMVECTOR vectorOne = XMLoadFloat2(&_vectorOne);
+		const XMVECTOR vectorTwo = XMLoadFloat2(&_vectorTwo);
+		const XMVECTOR minVector = XMVectorMin(vectorOne, vectorTwo);
+
+		Vector2 result;
+		XMStoreFloat2(&result, minVector);
+		return result;
+	}
+
+	inline void Vector2::Max(const Vector2& _vectorOne, const Vector2& _vectorTwo, Vector2& _result) noexcept
+	{
+		using namespace DirectX;
+		const XMVECTOR vectorOne = XMLoadFloat2(&_vectorOne);
+		const XMVECTOR vectorTwo = XMLoadFloat2(&_vectorTwo);
+		const XMVECTOR finalVector = XMVectorMax(vectorOne, vectorTwo);
+		XMStoreFloat2(&_result, finalVector);
+	}
+
+	inline Vector2 Vector2::Max(const Vector2& _vectorOne, const Vector2& _vectorTwo) noexcept
+	{
+		using namespace DirectX;
+		const XMVECTOR vectorOne = XMLoadFloat2(&_vectorOne);
+		const XMVECTOR vectorTwo = XMLoadFloat2(&_vectorTwo);
+		const XMVECTOR finalVector = XMVectorMax(vectorOne, vectorTwo);
+
+		Vector2 result;
+		XMStoreFloat2(&result, finalVector);
+		
+
+		return result;
+	}
+
+	
+
+	inline void Vector2::SmoothStep(const Vector2& _vectorOne, const Vector2& _vectorTwo, float _stepFactor, Vector2& _result) noexcept
 	{
 
-		LOG_WARN("Function Not Created File :[{0}] Line:[{1}]",__FILE__, __LINE__);
-		return Vector2();
+		using namespace DirectX;
+		_stepFactor = (_stepFactor > 1.0f) ? 1.0f : ((_stepFactor < 0.0f) ? 0.0f : _stepFactor);  
+		_stepFactor = _stepFactor * _stepFactor * (3.f - 2.f * _stepFactor);
+		const XMVECTOR vectorOne = XMLoadFloat2(&_vectorOne);
+		const XMVECTOR vectorTwo = XMLoadFloat2(&_vectorTwo);
+		const XMVECTOR finalVector = XMVectorLerp(vectorOne, vectorTwo, _stepFactor);
+		XMStoreFloat2(&_result, finalVector);
+
 	}
+
+	inline Vector2 Vector2::SmoothStep(const Vector2& _vectorOne, const Vector2& _vectorTwo, float _stepFactor) noexcept
+	{
+		using namespace DirectX;
+		_stepFactor = (_stepFactor > 1.0f) ? 1.0f : ((_stepFactor < 0.0f) ? 0.0f : _stepFactor);
+		_stepFactor = _stepFactor * _stepFactor * (3.f - 2.f * _stepFactor);
+		const XMVECTOR vectorOne = XMLoadFloat2(&_vectorOne);
+		const XMVECTOR vectorTwo = XMLoadFloat2(&_vectorTwo);
+		const XMVECTOR finalVector = XMVectorLerp(vectorOne, vectorTwo, _stepFactor);
+		
+		Vector2 result;
+		XMStoreFloat2(&result, finalVector);
+		return result;
+
+	}
+
 
 	// Cannot Inline this for some weird reason
 	
