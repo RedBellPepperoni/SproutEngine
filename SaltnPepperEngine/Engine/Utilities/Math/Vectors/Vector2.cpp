@@ -24,6 +24,13 @@ namespace SaltnPepperEngine::Maths
 {
 	/// Vector 2 Stuff
 
+
+	const Vector2 Vector2::Zero  = Vector2{ 0.f, 0.f };
+	const Vector2 Vector2::One   = Vector2{ 1.f, 1.f };
+	const Vector2 Vector2::UnitX = Vector2{ 1.f, 0.f };
+	const Vector2 Vector2::UnitY = Vector2{ 0.f, 1.f };
+
+
 	inline Vector2& Vector2::operator+=(const Vector2& _vector) noexcept
 	{
 		using namespace DirectX;
@@ -317,6 +324,48 @@ namespace SaltnPepperEngine::Maths
 		XMStoreFloat2(&result, finalVector);
 		return result;
 
+	}
+
+	void Vector2::Reflect(const Vector2& _incidentVector, const Vector2& _normalVector, Vector2& _result) noexcept
+	{
+		using namespace DirectX;
+		const XMVECTOR incidentVector = XMLoadFloat2(&_incidentVector);
+		const XMVECTOR normalVector = XMLoadFloat2(&_normalVector);
+		const XMVECTOR reflectedVector = XMVector2Reflect(incidentVector, normalVector);
+		XMStoreFloat2(&_result, reflectedVector);
+	}
+
+	Vector2 Vector2::Reflect(const Vector2& _incidentVector, const Vector2& _normalVector) noexcept
+	{
+		using namespace DirectX;
+		const XMVECTOR incidentVector = XMLoadFloat2(&_incidentVector);
+		const XMVECTOR normalVector = XMLoadFloat2(&_normalVector);
+		const XMVECTOR reflectedVector = XMVector2Reflect(incidentVector, normalVector);
+
+		Vector2 result;
+		XMStoreFloat2(&result, reflectedVector);
+		return result;
+	}
+
+	void Vector2::Refract(const Vector2& _incidentVector, const Vector2& _normalVector, float _refractionIndex, Vector2& _result) noexcept
+	{
+		using namespace DirectX;
+		const XMVECTOR incidentVector = XMLoadFloat2(&_incidentVector);
+		const XMVECTOR normalVector = XMLoadFloat2(&_normalVector);
+		const XMVECTOR refractedVector = XMVector2Refract(incidentVector, normalVector, _refractionIndex);
+		XMStoreFloat2(&_result, refractedVector);
+	}
+
+	Vector2 Vector2::Refract(const Vector2& _incidentVector, const Vector2& _normalVector, float _refractionIndex) noexcept
+	{
+		using namespace DirectX;
+		const XMVECTOR incidentVector = XMLoadFloat2(&_incidentVector);
+		const XMVECTOR normalVector = XMLoadFloat2(&_normalVector);
+		const XMVECTOR refractedVector = XMVector2Refract(incidentVector, normalVector, _refractionIndex);
+		
+		Vector2 result;
+		XMStoreFloat2(&result, refractedVector);
+		return result;
 	}
 
 

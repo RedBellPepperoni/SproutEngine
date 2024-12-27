@@ -20,8 +20,6 @@
 
 
 #include <DirectXMath.h>
-#include <DirectXPackedVector.h>
-#include <DirectXCollision.h>
 
 using namespace DirectX;
 
@@ -31,7 +29,7 @@ namespace SaltnPepperEngine
 	{
 
 		struct Vector2Int;
-		
+		struct Quaternion;
 
 		/// <summary>
 		///  Structure defining a 2 dimentional floating point vector (a Vector 2)
@@ -48,7 +46,7 @@ namespace SaltnPepperEngine
 
 
 			/// Declarations for Vector2
-			Vector2() noexcept : XMFLOAT2(0.0f, 0.0f) {}
+			Vector2() noexcept : XMFLOAT2{ 0.0f, 0.0f } {}
 			constexpr explicit Vector2(float _singleValue) noexcept : XMFLOAT2(_singleValue, _singleValue) {}
 			constexpr explicit Vector2(float _xValue, float _yValue) noexcept : XMFLOAT2(_xValue, _yValue) {}
 
@@ -141,9 +139,14 @@ namespace SaltnPepperEngine
 			
 		
 
+
 			/// Vector reflection and refration
 
-			
+			static void Reflect(const Vector2& _incidentVector, const Vector2& _normalVector, Vector2& _result) noexcept;
+			static Vector2 Reflect(const Vector2& _incidentVector, const Vector2& _normalVector) noexcept;
+
+			static void Refract(const Vector2& _incidentVector, const Vector2& _normalVector, float _refractionIndex, Vector2& _result) noexcept;
+			static Vector2 Refract(const Vector2& _incidentVector, const Vector2& _normalVector, float _refractionIndex) noexcept;
 
 		};
 

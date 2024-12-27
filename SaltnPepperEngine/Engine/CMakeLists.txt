@@ -7,12 +7,14 @@ LIST(
 	APPEND SRC_FILES
 	"${CURRENT_DIR}/Utilities/Logging/Log.cpp"
 	"${CURRENT_DIR}/Utilities/Math/Vectors/Vector2.cpp"
+	"${CURRENT_DIR}/Utilities/Math/Quaternion.cpp"
 )
 
 LIST(
 	APPEND INC_FILES
 	"${CURRENT_DIR}/Utilities/Logging/Log.hpp"
 	"${CURRENT_DIR}/Utilities/Math/Vectors/Vector2.hpp"
+	"${CURRENT_DIR}/Utilities/Math/Quaternion.hpp"
 	"${CURRENT_DIR}/Utilities/Math/MathFunctions.hpp"
 	"${CURRENT_DIR}/Utilities/Math/MathDefinitions.hpp"
 )
