@@ -24,7 +24,7 @@ ADD_SUBDIRECTORY(${EXTERNAL_DIRECTORY})
 
 MESSAGE ([<WARNING>]"Source Files: ${SRC_FILES}")
 
-ADD_EXECUTABLE (SaltnPepperEngine "${SRC_FILES}" "${INC_FILES}" "Engine/Utilities/Math/Quaternion.cpp")
+ADD_EXECUTABLE (SaltnPepperEngine "${SRC_FILES}" "${INC_FILES}")
 
 
 if (CMAKE_VERSION VERSION_GREATER 3.12)

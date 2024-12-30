@@ -17,6 +17,7 @@
 
 
 #include <Utilities/Math/Vectors/Vector2.hpp>
+#include <Utilities/Math/Quaternion.hpp>
 #include <Utilities/Logging/Log.hpp>
 
 
@@ -365,6 +366,27 @@ namespace SaltnPepperEngine::Maths
 		
 		Vector2 result;
 		XMStoreFloat2(&result, refractedVector);
+		return result;
+	}
+
+	void Vector2::Transform(const Vector2& _vector, const Quaternion& _quaternion, Vector2& _result) noexcept
+	{
+		using namespace DirectX;
+		const XMVECTOR vector = XMLoadFloat2(&_vector);
+		const XMVECTOR quaternion = XMLoadFloat4(&_quaternion);
+		const XMVECTOR transformedVector = XMVector3Rotate(vector, quaternion);
+		XMStoreFloat2(&_result, transformedVector);
+	}
+
+	Vector2 Vector2::Transform(const Vector2& _vector, const Quaternion& _quaternion) noexcept
+	{
+		using namespace DirectX;
+		const XMVECTOR vector = XMLoadFloat2(&_vector);
+		const XMVECTOR quaternion = XMLoadFloat4(&_quaternion);
+		const XMVECTOR transformedVector = XMVector3Rotate(vector, quaternion);
+
+		Vector2 result;
+		XMStoreFloat2(&result, transformedVector);
 		return result;
 	}
 

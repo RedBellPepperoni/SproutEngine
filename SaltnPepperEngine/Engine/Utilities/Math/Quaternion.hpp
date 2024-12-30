@@ -75,6 +75,28 @@ namespace SaltnPepperEngine
 			friend Quaternion operator* (const Quaternion& _quaternion, float _scalar) noexcept;
 			friend Quaternion operator/ (const Quaternion& _quatOne, const Quaternion& _quatTwo) noexcept;
 			friend Quaternion operator* (float _scalar, const Quaternion& _quaternion) noexcept;
+		
+			
+			float Length() const noexcept;
+			float LengthSquared() const noexcept;
+
+			bool IsFinite() const noexcept;
+			void Inverse(Quaternion& _result) const noexcept;
+			Quaternion Inverse() noexcept;
+
+			void Normalize() noexcept;
+			void Normalize(Quaternion& _result) const noexcept;
+			bool IsNormalized() const noexcept;
+
+			void Conjugate() noexcept;
+			void Conjugate(Quaternion& _result) const noexcept;
+
+			void Log(Quaternion& _result) const noexcept;
+			Quaternion Log()  noexcept;
+
+			void Exponent(Quaternion& _result) const noexcept;
+			Quaternion Exponent()  noexcept;
+		
 		};
 	}
 }

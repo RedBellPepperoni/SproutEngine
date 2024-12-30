@@ -147,6 +147,9 @@
 			"path" : "SaltnPepperEngine/Engine/CMakeLists.txt"
 		},
 		{
+			"path" : "SaltnPepperEngine/Engine/Utilities/CMakeLists.txt"
+		},
+		{
 			"path" : "SaltnPepperEngine/Externals/CMakeLists.txt"
 		},
 		{

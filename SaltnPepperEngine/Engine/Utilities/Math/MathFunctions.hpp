@@ -37,22 +37,23 @@ namespace SaltnPepperEngine
 	{
 		/// Pi values
 		static constexpr float PI = XM_PI;
-		static constexpr float TwoPI = XM_2PI;
-		static constexpr float OnebyPI = XM_1DIVPI;
-		static constexpr float OnebyTwoPI = XM_1DIV2PI;
-		static constexpr float PIbyTwo = XM_PIDIV2;
-		static constexpr float PIbyFour = XM_PIDIV4;
+		static constexpr float TWOPI = XM_2PI;
+		static constexpr float ONEbyPI = XM_1DIVPI;
+		static constexpr float ONEbyTWOPI = XM_1DIV2PI;
+		static constexpr float PIbyTWO = XM_PIDIV2;
+		static constexpr float PIbyFOUR = XM_PIDIV4;
 
 		/// Int Values
-		static constexpr int MaxInt = 0x7fffffff;
-		static constexpr int MinInt = 0x80000000;
-		static constexpr int MaxIntUnsigned = 0xffffffff;
-		static constexpr int MinIntUnsigned = 0x00000000;
+		static constexpr int MAX_INT = 0x7fffffff;
+		static constexpr int MIN_INT = 0x80000000;
+		static constexpr int MAX_INTUNSIGNED = 0xffffffff;
+		static constexpr int MIN_INTUNSIGNED = 0x00000000;
 
 		/// LArge and Small Values
-		static constexpr float Epsilon = 0.000001f;
-		static constexpr float LargeEpsilon = 0.00005f;
-		static constexpr float Infinity = std::numeric_limits<float>::infinity();
+		static constexpr float UNITEPSILON = 0.001f;
+		static constexpr float EPSILON = 0.000001f;
+		static constexpr float LARGEEPSILON = 0.00005f;
+		static constexpr float INF = std::numeric_limits<float>::infinity();
 
 
 		/// Unit Conversions : Angle
@@ -159,6 +160,11 @@ namespace SaltnPepperEngine
 		static inline bool IsNan(Type _value)
 		{
 			return std::isnan(_value);
+		}
+
+		static inline bool IsFinite(float _value) noexcept
+		{
+			return std::isfinite(_value);
 		}
 	}
 }

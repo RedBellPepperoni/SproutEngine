@@ -1,4 +1,4 @@
-# Install script for directory: D:/GameEngineStuff/SaltnPepper/SaltnPepperEngine/Engine
+# Install script for directory: D:/GameEngineStuff/SaltnPepper/SaltnPepperEngine/Engine/Utilities
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -30,11 +30,5 @@ endif()
 # Is this installation the result of a crosscompile?
 if(NOT DEFINED CMAKE_CROSSCOMPILING)
   set(CMAKE_CROSSCOMPILING "FALSE")
-endif()
-
-if(NOT CMAKE_INSTALL_LOCAL_ONLY)
-  # Include the install script for each subdirectory.
-  include("D:/GameEngineStuff/SaltnPepper/out/build/x64-debug/SaltnPepperEngine/Engine/Utilities/cmake_install.cmake")
-
 endif()
 

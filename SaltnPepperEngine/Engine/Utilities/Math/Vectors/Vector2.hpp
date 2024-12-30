@@ -148,6 +148,11 @@ namespace SaltnPepperEngine
 			static void Refract(const Vector2& _incidentVector, const Vector2& _normalVector, float _refractionIndex, Vector2& _result) noexcept;
 			static Vector2 Refract(const Vector2& _incidentVector, const Vector2& _normalVector, float _refractionIndex) noexcept;
 
+			static void Transform(const Vector2& _vector, const Quaternion& _quaternion, Vector2& _result) noexcept;
+			static Vector2 Transform(const Vector2& _vector, const Quaternion& _quaternion) noexcept;
+
+			
+
 		};
 
 

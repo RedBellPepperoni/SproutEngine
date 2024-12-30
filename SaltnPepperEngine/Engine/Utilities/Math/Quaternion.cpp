@@ -17,6 +17,7 @@
 
 #include <Utilities/Math/Quaternion.hpp>
 #include <Utilities/Math/Vectors/Vector2.hpp>
+#include <Utilities/Math/MathFunctions.hpp>
 
 namespace SaltnPepperEngine::Maths
 {
@@ -103,6 +104,114 @@ namespace SaltnPepperEngine::Maths
 	Quaternion Quaternion::operator+() const noexcept
 	{
 		return *this;
+	}
+
+	float Quaternion::Length() const noexcept
+	{
+		using namespace DirectX;
+		const XMVECTOR quaternion = XMLoadFloat4(this);
+		return XMVectorGetX(XMQuaternionLength(quaternion));
+	}
+
+	float Quaternion::LengthSquared() const noexcept
+	{
+		using namespace DirectX;
+		const XMVECTOR quaternion = XMLoadFloat4(this);
+		return XMVectorGetX(XMQuaternionLengthSq(quaternion));
+	}
+
+	bool Quaternion::IsFinite() const noexcept
+	{
+		//return (Maths::IsFinite(x) && Maths::IsFinite(y) && Maths::IsFinite(z) && Maths::IsFinite(w));
+		using namespace DirectX;
+		const XMVECTOR quaternion = XMLoadFloat4(this);
+		return !XMQuaternionIsInfinite(quaternion);
+	}
+
+	void Quaternion::Inverse(Quaternion& _result) const noexcept
+	{
+		using namespace DirectX;
+		const XMVECTOR quaternion = XMLoadFloat4(this);
+		XMStoreFloat4(&_result, XMQuaternionInverse(quaternion));
+	}
+
+	Quaternion Quaternion::Inverse() noexcept
+	{
+		using namespace DirectX;
+		const XMVECTOR quaternion = XMLoadFloat4(this);
+
+
+		Quaternion result;
+		XMStoreFloat4(&result, XMQuaternionInverse(quaternion));
+		return result;
+	}
+
+	void Quaternion::Normalize() noexcept
+	{
+		using namespace DirectX;
+		const XMVECTOR quaternion = XMLoadFloat4(this);
+		XMStoreFloat4(this, XMQuaternionNormalize(quaternion));
+	
+	}
+
+	void Quaternion::Normalize(Quaternion& _result) const noexcept
+	{
+		using namespace DirectX;
+		const XMVECTOR quaternion = XMLoadFloat4(this);
+		XMStoreFloat4(&_result, XMQuaternionNormalize(quaternion));
+	}
+
+	bool Quaternion::IsNormalized() const noexcept
+	{
+		return XMScalarNearEqual(LengthSquared(), 1, UNITEPSILON);
+	}
+
+	void Quaternion::Conjugate() noexcept
+	{
+		using namespace DirectX;
+		const XMVECTOR quaternion = XMLoadFloat4(this);
+		XMStoreFloat4(this, XMQuaternionConjugate(quaternion));
+	}
+
+	void Quaternion::Conjugate(Quaternion& _result) const noexcept
+	{
+		using namespace DirectX;
+		const XMVECTOR quaternion = XMLoadFloat4(this);
+		XMStoreFloat4(&_result, XMQuaternionConjugate(quaternion));
+	}
+
+	void Quaternion::Log(Quaternion& _result) const noexcept
+	{
+		using namespace DirectX;
+		const XMVECTOR quaternion = XMLoadFloat4(this);
+
+		XMStoreFloat4(&_result, XMQuaternionLn(quaternion));
+	}
+
+	Quaternion Quaternion::Log() noexcept
+	{
+		using namespace DirectX;
+		const XMVECTOR quaternion = XMLoadFloat4(this);
+
+		Quaternion result;
+		XMStoreFloat4(&result, XMQuaternionLn(quaternion));
+		return result;
+	}
+
+	void Quaternion::Exponent(Quaternion& _result) const noexcept
+	{
+		using namespace DirectX;
+		const XMVECTOR quaternion = XMLoadFloat4(this);
+		XMStoreFloat4(&_result, XMQuaternionExp(quaternion));
+	}
+
+	Quaternion Quaternion::Exponent() noexcept
+	{
+		using namespace DirectX;
+		const XMVECTOR quaternion = XMLoadFloat4(this);
+		Quaternion result;
+		XMStoreFloat4(&result, XMQuaternionExp(quaternion));
+		return result;
 	}
 
 	Quaternion operator+(const Quaternion& _quatOne, const Quaternion& _quatTwo) noexcept
