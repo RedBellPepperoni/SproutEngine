@@ -16,8 +16,8 @@
 **************************************************************************/
 
 
-#include <Utilities/Math/Vectors/Vector2.hpp>
-#include <Utilities/Math/Quaternion.hpp>
+#include <Math/Vectors/Vector2.hpp>
+#include <Math/Quaternion.hpp>
 #include <Utilities/Logging/Log.hpp>
 
 

@@ -159,13 +159,13 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "SaltnPepperEngine/Engine/Utilities/Math/Vectors/Vector2.cpp",
+			"path" : "SaltnPepperEngine/Engine/Math/Vectors/Vector2.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "SaltnPepperEngine/Engine/Utilities/Math/Quaternion.cpp",
+			"path" : "SaltnPepperEngine/Engine/Math/Quaternion.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
@@ -180,22 +180,22 @@
 		},
 		{
 			"backtrace" : 1,
-			"path" : "SaltnPepperEngine/Engine/Utilities/Math/Vectors/Vector2.hpp",
+			"path" : "SaltnPepperEngine/Engine/Math/Vectors/Vector2.hpp",
 			"sourceGroupIndex" : 1
 		},
 		{
 			"backtrace" : 1,
-			"path" : "SaltnPepperEngine/Engine/Utilities/Math/Quaternion.hpp",
+			"path" : "SaltnPepperEngine/Engine/Math/Quaternion.hpp",
 			"sourceGroupIndex" : 1
 		},
 		{
 			"backtrace" : 1,
-			"path" : "SaltnPepperEngine/Engine/Utilities/Math/MathFunctions.hpp",
+			"path" : "SaltnPepperEngine/Engine/Math/MathFunctions.hpp",
 			"sourceGroupIndex" : 1
 		},
 		{
 			"backtrace" : 1,
-			"path" : "SaltnPepperEngine/Engine/Utilities/Math/MathDefinitions.hpp",
+			"path" : "SaltnPepperEngine/Engine/Math/MathDefinitions.hpp",
 			"sourceGroupIndex" : 1
 		}
 	],

@@ -1,5 +1,5 @@
 /************************************************************************|
-|							     MathDefinitions.hpp						     |
+|						      Matrix.hpp						          |
 |************************************************************************|
 |                                                                        |
 |========================================================================|
@@ -15,16 +15,31 @@
 |  SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.                |
 **************************************************************************/
 
-#ifndef MATHDEFINITIONS_H
-#define MATHDEFINITIONS_H
 
-// Math Functions
-#include <Utilities/Math/MathFunctions.hpp>
+#ifndef MATRIX_4_H
+#define MATRIX_4_H
+
+#include <DirectXMath.h>
+
+using namespace DirectX;
+
+namespace SaltnPepperEngine
+{
+	namespace Maths
+	{
+
+		struct Matrix4 : public XMFLOAT4
+		{
+			Matrix() noexcept : XMFLOAT4X4(1.f, 0, 0, 0,
+										   0, 1.f, 0, 0,
+										   0, 0, 1.f, 0,
+										   0, 0, 0, 1.f)
+			{
+			}
+		};
+
+	}
+}
 
 
-// Vector Includes
-#include <Utilities/Math/Vectors/Vector2.hpp>
-
-
-
-#endif // !MATHDEFINITIONS_H
+#endif // !MATRIX_4_H

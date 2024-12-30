@@ -1,16 +1,11 @@
 # ninja log v6
 18	188	7565421638634882	SaltnPepperRuntime/CMakeFiles/SaltnPepperRuntime.dir/SaltnPepperRuntime.cpp.obj	2f52eac5878b7d65
-3022	3202	7571574683488686	SaltnPepperEngine/SaltnPepperEngine.exe	4ec8b8613a66be41
-11	2507	7565905005930397	SaltnPepperEngine/CMakeFiles/SaltnPepperEngine.dir/Engine/Utilities/Logging/Log.cpp.obj	558711d51fbb47ba
+2428	2659	7572281899254721	SaltnPepperEngine/SaltnPepperEngine.exe	4ec8b8613a66be41
+14	2887	7572278838825775	SaltnPepperEngine/CMakeFiles/SaltnPepperEngine.dir/Engine/Utilities/Logging/Log.cpp.obj	558711d51fbb47ba
 25	302	7565925616621852	SaltnPepperEngine/CMakeFiles/SaltnPepperEngine.dir/Engine/Utilities/Math/Vector2.cpp.obj	cb994436af03d856
 189	421	7565421640343164	SaltnPepperRuntime/SaltnPepperRuntime.exe	e7e2cb2159ca2009
-20	3022	7571574653465772	SaltnPepperEngine/CMakeFiles/SaltnPepperEngine.dir/SaltnPepperEngine.cpp.obj	d3687f22fe3531c5
-28	2405	7569798994904014	SaltnPepperEngine/CMakeFiles/SaltnPepperEngine.dir/Engine/Utilities/Math/Vectors/Vector2.cpp.obj	1b87da0165682c07
-28	474	7571574653542456	SaltnPepperEngine/CMakeFiles/SaltnPepperEngine.dir/Engine/Utilities/Math/Quaternion.cpp.obj	6f96316a77f8771f
-22	856	7572278838909876	SaltnPepperEngine/CMakeFiles/SaltnPepperEngine.dir/Engine/Utilities/Math/Quaternion.cpp.obj	6f96316a77f8771f
-7	2868	7572278838759305	SaltnPepperEngine/CMakeFiles/SaltnPepperEngine.dir/SaltnPepperEngine.cpp.obj	d3687f22fe3531c5
-14	2887	7572278838825775	SaltnPepperEngine/CMakeFiles/SaltnPepperEngine.dir/Engine/Utilities/Logging/Log.cpp.obj	558711d51fbb47ba
-28	395	7572279825876548	SaltnPepperEngine/CMakeFiles/SaltnPepperEngine.dir/Engine/Utilities/Math/Quaternion.cpp.obj	6f96316a77f8771f
+5	2428	7572281875020058	SaltnPepperEngine/CMakeFiles/SaltnPepperEngine.dir/SaltnPepperEngine.cpp.obj	d3687f22fe3531c5
 24	2977	7572279825841423	SaltnPepperEngine/CMakeFiles/SaltnPepperEngine.dir/Engine/Utilities/Math/Vectors/Vector2.cpp.obj	1b87da0165682c07
-19	3056	7572279825784909	SaltnPepperEngine/CMakeFiles/SaltnPepperEngine.dir/SaltnPepperEngine.cpp.obj	d3687f22fe3531c5
-3057	3371	7572279856168669	SaltnPepperEngine/SaltnPepperEngine.exe	4ec8b8613a66be41
+28	395	7572279825876548	SaltnPepperEngine/CMakeFiles/SaltnPepperEngine.dir/Engine/Utilities/Math/Quaternion.cpp.obj	6f96316a77f8771f
+6	2424	7572291051210203	SaltnPepperEngine/CMakeFiles/SaltnPepperEngine.dir/SaltnPepperEngine.cpp.obj	d3687f22fe3531c5
+19	2369	7572291185032612	SaltnPepperEngine/CMakeFiles/SaltnPepperEngine.dir/Engine/Math/Vectors/Vector2.cpp.obj	f749688c8db372a8

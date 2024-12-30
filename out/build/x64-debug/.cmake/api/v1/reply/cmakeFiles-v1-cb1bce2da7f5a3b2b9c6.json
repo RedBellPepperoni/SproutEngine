@@ -150,6 +150,9 @@
 			"path" : "SaltnPepperEngine/Engine/Utilities/CMakeLists.txt"
 		},
 		{
+			"path" : "SaltnPepperEngine/Engine/Math/CMakeLists.txt"
+		},
+		{
 			"path" : "SaltnPepperEngine/Externals/CMakeLists.txt"
 		},
 		{

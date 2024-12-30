@@ -4,7 +4,7 @@
 #pragma once
 
 #include <Utilities/Logging/Log.hpp>
-#include <Utilities/Math/MathDefinitions.hpp>
+#include <Math/MathDefinitions.hpp>
 
 
 // TODO: Reference additional headers your program requires here.

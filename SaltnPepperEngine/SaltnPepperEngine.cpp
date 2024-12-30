@@ -31,12 +31,14 @@ int main()
 	float x = 1.00f;
 	float lerpedFlaot = Maths::Lerp(x, 10.0f, 0.5f);
 
-
+	Maths::Quaternion quat = Maths::Quaternion{};
 	
+
 
 	LOG_ERROR("Lerped Float value : [{0}]", lerpedFlaot);
 	
 	LOG_WARN("VECTOR MUL : [{0} , {1}]", newVec2.x, newVec2.y);
+	LOG_WARN("Quaternion : [{0} , {1} , {2} , {3}]", quat.x, quat.y, quat.z, quat.w);
 
 
 

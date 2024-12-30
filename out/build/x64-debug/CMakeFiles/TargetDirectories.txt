@@ -7,6 +7,8 @@ D:/GameEngineStuff/SaltnPepper/out/build/x64-debug/SaltnPepperEngine/Engine/CMak
 D:/GameEngineStuff/SaltnPepper/out/build/x64-debug/SaltnPepperEngine/Engine/CMakeFiles/rebuild_cache.dir
 D:/GameEngineStuff/SaltnPepper/out/build/x64-debug/SaltnPepperEngine/Engine/Utilities/CMakeFiles/edit_cache.dir
 D:/GameEngineStuff/SaltnPepper/out/build/x64-debug/SaltnPepperEngine/Engine/Utilities/CMakeFiles/rebuild_cache.dir
+D:/GameEngineStuff/SaltnPepper/out/build/x64-debug/SaltnPepperEngine/Engine/Math/CMakeFiles/edit_cache.dir
+D:/GameEngineStuff/SaltnPepper/out/build/x64-debug/SaltnPepperEngine/Engine/Math/CMakeFiles/rebuild_cache.dir
 D:/GameEngineStuff/SaltnPepper/out/build/x64-debug/SaltnPepperEngine/Externals/CMakeFiles/edit_cache.dir
 D:/GameEngineStuff/SaltnPepper/out/build/x64-debug/SaltnPepperEngine/Externals/CMakeFiles/rebuild_cache.dir
 D:/GameEngineStuff/SaltnPepper/out/build/x64-debug/SaltnPepperRuntime/CMakeFiles/SaltnPepperRuntime.dir
