@@ -18,6 +18,7 @@
 
 #include <Math/Vectors/Vector2.hpp>
 #include <Math/Quaternion.hpp>
+#include <Core/EngineDefines.hpp>
 #include <Utilities/Logging/Log.hpp>
 
 
@@ -84,23 +85,26 @@ namespace SaltnPepperEngine::Maths
 
 	
 
-	inline Vector2& Vector2::operator*=(const float _float) noexcept
+	inline Vector2& Vector2::operator*=(const float _scalar) noexcept
 	{
 		using namespace DirectX;
 
 		const XMVECTOR thisVector = XMLoadFloat2(this);
-		const XMVECTOR finalVector = XMVectorScale(thisVector, _float);
+		const XMVECTOR finalVector = XMVectorScale(thisVector, _scalar);
 
 		XMStoreFloat2(this, finalVector);
 		return *this;
 	}
 
-	inline Vector2& Vector2::operator/=(const float _float) noexcept
+	inline Vector2& Vector2::operator/=(const float _scalar) noexcept
 	{
 		using namespace DirectX;
 
+		// Check Divide by Zero Edge Case
+		SNP_ASSERT(_scalar != 0.0f);
+
 		const XMVECTOR thisVector = XMLoadFloat2(this);
-		const XMVECTOR finalVector = XMVectorScale(thisVector, 1.0f / _float);
+		const XMVECTOR finalVector = XMVectorScale(thisVector, 1.0f / _scalar);
 
 		XMStoreFloat2(this, finalVector);
 		return *this;

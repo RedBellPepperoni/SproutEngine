@@ -15,9 +15,9 @@
 |  SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.                |
 **************************************************************************/
 
-#include <Utilities/Math/Quaternion.hpp>
-#include <Utilities/Math/Vectors/Vector2.hpp>
-#include <Utilities/Math/MathFunctions.hpp>
+#include <Math/Quaternion.hpp>
+#include <Math/Vectors/Vector2.hpp>
+#include <Math/MathFunctions.hpp>
 
 namespace SaltnPepperEngine::Maths
 {

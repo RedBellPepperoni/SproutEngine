@@ -43,8 +43,6 @@ namespace SaltnPepperEngine
 			static const Vector2 UnitY;
 
 
-
-
 			/// Declarations for Vector2
 			Vector2() noexcept : XMFLOAT2{ 0.0f, 0.0f } {}
 			constexpr explicit Vector2(float _singleValue) noexcept : XMFLOAT2(_singleValue, _singleValue) {}
@@ -83,8 +81,8 @@ namespace SaltnPepperEngine
 			Vector2& operator/= (const Vector2& _vector) noexcept;
 			
 
-			Vector2& operator*= (const float _float) noexcept;
-			Vector2& operator/= (const float _float) noexcept;
+			Vector2& operator*= (const float _scalar) noexcept;
+			Vector2& operator/= (const float _scalar) noexcept;
 
 			/// Comparisons
 			bool operator== (const Vector2& _vector) const noexcept;
@@ -136,8 +134,6 @@ namespace SaltnPepperEngine
 		
 			static void SmoothStep(const Vector2& _vectorOne, const Vector2& _vectorTwo, float _stepFactor, Vector2& _result) noexcept;
 			static Vector2 SmoothStep(const Vector2& _vectorOne, const Vector2& _vectorTwo, float _stepFactor) noexcept;
-			
-		
 
 
 			/// Vector reflection and refration

@@ -19,6 +19,8 @@
 #define ENGINEDEFINES_H
 
 
+#define SNP_PLATFORM_WINDOWS 1;
+
 #ifdef SNP_PLATFORM_WINDOWS
 #ifndef NOMINMAX
 #define NOMINMAX // For windows.h
