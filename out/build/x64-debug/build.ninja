@@ -11,7 +11,7 @@
 # =============================================================================
 
 # =============================================================================
-# Project: SaltnPepper
+# Project: SproutEngine
 # Configurations: Debug
 # =============================================================================
 
@@ -39,13 +39,13 @@ include CMakeFiles\rules.ninja
 #############################################
 # Logical path to working directory; prefix for absolute paths.
 
-cmake_ninja_workdir = D$:\GameEngineStuff\SaltnPepper\out\build\x64-debug\
+cmake_ninja_workdir = D$:\GameEngineStuff\SproutGameEngine\out\build\x64-debug\
 
 #############################################
 # Utility command for edit_cache
 
 build CMakeFiles\edit_cache.util: CUSTOM_COMMAND
-  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D D:\GameEngineStuff\SaltnPepper\out\build\x64-debug && "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D D:\GameEngineStuff\SproutGameEngine\out\build\x64-debug && "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
   DESC = No interactive CMake dialog available...
   restat = 1
 
@@ -56,7 +56,7 @@ build edit_cache: phony CMakeFiles\edit_cache.util
 # Utility command for rebuild_cache
 
 build CMakeFiles\rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D D:\GameEngineStuff\SaltnPepper\out\build\x64-debug && "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" --regenerate-during-build -SD:\GameEngineStuff\SaltnPepper -BD:\GameEngineStuff\SaltnPepper\out\build\x64-debug"
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D D:\GameEngineStuff\SproutGameEngine\out\build\x64-debug && "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" --regenerate-during-build -SD:\GameEngineStuff\SproutGameEngine -BD:\GameEngineStuff\SproutGameEngine\out\build\x64-debug"
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -65,295 +65,295 @@ build rebuild_cache: phony CMakeFiles\rebuild_cache.util
 
 # =============================================================================
 # Write statements declared in CMakeLists.txt:
-# D:/GameEngineStuff/SaltnPepper/CMakeLists.txt
+# D:/GameEngineStuff/SproutGameEngine/CMakeLists.txt
 # =============================================================================
 
 # =============================================================================
-# Object build statements for EXECUTABLE target SaltnPepperEngine
+# Object build statements for EXECUTABLE target SproutEngine
 
 
 #############################################
-# Order-only phony target for SaltnPepperEngine
+# Order-only phony target for SproutEngine
 
-build cmake_object_order_depends_target_SaltnPepperEngine: phony || .
+build cmake_object_order_depends_target_SproutEngine: phony || .
 
-build SaltnPepperEngine\CMakeFiles\SaltnPepperEngine.dir\SaltnPepperEngine.cpp.obj: CXX_COMPILER__SaltnPepperEngine_unscanned_Debug D$:\GameEngineStuff\SaltnPepper\SaltnPepperEngine\SaltnPepperEngine.cpp || cmake_object_order_depends_target_SaltnPepperEngine
+build SproutEngine\CMakeFiles\SproutEngine.dir\SproutEngine.cpp.obj: CXX_COMPILER__SproutEngine_unscanned_Debug D$:\GameEngineStuff\SproutGameEngine\SproutEngine\SproutEngine.cpp || cmake_object_order_depends_target_SproutEngine
   FLAGS = /utf-8 /MDd /Ob0 /Od /RTC1 -std:c++20 -ZI
-  INCLUDES = -ID:\GameEngineStuff\SaltnPepper\SaltnPepperEngine\Externals -ID:\GameEngineStuff\SaltnPepper\SaltnPepperEngine\Engine
-  OBJECT_DIR = SaltnPepperEngine\CMakeFiles\SaltnPepperEngine.dir
-  OBJECT_FILE_DIR = SaltnPepperEngine\CMakeFiles\SaltnPepperEngine.dir
-  TARGET_COMPILE_PDB = SaltnPepperEngine\CMakeFiles\SaltnPepperEngine.dir\
-  TARGET_PDB = SaltnPepperEngine\SaltnPepperEngine.pdb
+  INCLUDES = -ID:\GameEngineStuff\SproutGameEngine\SproutEngine\Externals -ID:\GameEngineStuff\SproutGameEngine\SproutEngine\Engine
+  OBJECT_DIR = SproutEngine\CMakeFiles\SproutEngine.dir
+  OBJECT_FILE_DIR = SproutEngine\CMakeFiles\SproutEngine.dir
+  TARGET_COMPILE_PDB = SproutEngine\CMakeFiles\SproutEngine.dir\
+  TARGET_PDB = SproutEngine\SproutEngine.pdb
 
-build SaltnPepperEngine\CMakeFiles\SaltnPepperEngine.dir\Engine\Utilities\Logging\Log.cpp.obj: CXX_COMPILER__SaltnPepperEngine_unscanned_Debug D$:\GameEngineStuff\SaltnPepper\SaltnPepperEngine\Engine\Utilities\Logging\Log.cpp || cmake_object_order_depends_target_SaltnPepperEngine
+build SproutEngine\CMakeFiles\SproutEngine.dir\Engine\Utilities\Logging\Log.cpp.obj: CXX_COMPILER__SproutEngine_unscanned_Debug D$:\GameEngineStuff\SproutGameEngine\SproutEngine\Engine\Utilities\Logging\Log.cpp || cmake_object_order_depends_target_SproutEngine
   FLAGS = /utf-8 /MDd /Ob0 /Od /RTC1 -std:c++20 -ZI
-  INCLUDES = -ID:\GameEngineStuff\SaltnPepper\SaltnPepperEngine\Externals -ID:\GameEngineStuff\SaltnPepper\SaltnPepperEngine\Engine
-  OBJECT_DIR = SaltnPepperEngine\CMakeFiles\SaltnPepperEngine.dir
-  OBJECT_FILE_DIR = SaltnPepperEngine\CMakeFiles\SaltnPepperEngine.dir\Engine\Utilities\Logging
-  TARGET_COMPILE_PDB = SaltnPepperEngine\CMakeFiles\SaltnPepperEngine.dir\
-  TARGET_PDB = SaltnPepperEngine\SaltnPepperEngine.pdb
+  INCLUDES = -ID:\GameEngineStuff\SproutGameEngine\SproutEngine\Externals -ID:\GameEngineStuff\SproutGameEngine\SproutEngine\Engine
+  OBJECT_DIR = SproutEngine\CMakeFiles\SproutEngine.dir
+  OBJECT_FILE_DIR = SproutEngine\CMakeFiles\SproutEngine.dir\Engine\Utilities\Logging
+  TARGET_COMPILE_PDB = SproutEngine\CMakeFiles\SproutEngine.dir\
+  TARGET_PDB = SproutEngine\SproutEngine.pdb
 
-build SaltnPepperEngine\CMakeFiles\SaltnPepperEngine.dir\Engine\Math\Vectors\Vector2.cpp.obj: CXX_COMPILER__SaltnPepperEngine_unscanned_Debug D$:\GameEngineStuff\SaltnPepper\SaltnPepperEngine\Engine\Math\Vectors\Vector2.cpp || cmake_object_order_depends_target_SaltnPepperEngine
+build SproutEngine\CMakeFiles\SproutEngine.dir\Engine\Math\Vectors\Vector2.cpp.obj: CXX_COMPILER__SproutEngine_unscanned_Debug D$:\GameEngineStuff\SproutGameEngine\SproutEngine\Engine\Math\Vectors\Vector2.cpp || cmake_object_order_depends_target_SproutEngine
   FLAGS = /utf-8 /MDd /Ob0 /Od /RTC1 -std:c++20 -ZI
-  INCLUDES = -ID:\GameEngineStuff\SaltnPepper\SaltnPepperEngine\Externals -ID:\GameEngineStuff\SaltnPepper\SaltnPepperEngine\Engine
-  OBJECT_DIR = SaltnPepperEngine\CMakeFiles\SaltnPepperEngine.dir
-  OBJECT_FILE_DIR = SaltnPepperEngine\CMakeFiles\SaltnPepperEngine.dir\Engine\Math\Vectors
-  TARGET_COMPILE_PDB = SaltnPepperEngine\CMakeFiles\SaltnPepperEngine.dir\
-  TARGET_PDB = SaltnPepperEngine\SaltnPepperEngine.pdb
+  INCLUDES = -ID:\GameEngineStuff\SproutGameEngine\SproutEngine\Externals -ID:\GameEngineStuff\SproutGameEngine\SproutEngine\Engine
+  OBJECT_DIR = SproutEngine\CMakeFiles\SproutEngine.dir
+  OBJECT_FILE_DIR = SproutEngine\CMakeFiles\SproutEngine.dir\Engine\Math\Vectors
+  TARGET_COMPILE_PDB = SproutEngine\CMakeFiles\SproutEngine.dir\
+  TARGET_PDB = SproutEngine\SproutEngine.pdb
 
-build SaltnPepperEngine\CMakeFiles\SaltnPepperEngine.dir\Engine\Math\Quaternion.cpp.obj: CXX_COMPILER__SaltnPepperEngine_unscanned_Debug D$:\GameEngineStuff\SaltnPepper\SaltnPepperEngine\Engine\Math\Quaternion.cpp || cmake_object_order_depends_target_SaltnPepperEngine
+build SproutEngine\CMakeFiles\SproutEngine.dir\Engine\Math\Vectors\Vector3.cpp.obj: CXX_COMPILER__SproutEngine_unscanned_Debug D$:\GameEngineStuff\SproutGameEngine\SproutEngine\Engine\Math\Vectors\Vector3.cpp || cmake_object_order_depends_target_SproutEngine
   FLAGS = /utf-8 /MDd /Ob0 /Od /RTC1 -std:c++20 -ZI
-  INCLUDES = -ID:\GameEngineStuff\SaltnPepper\SaltnPepperEngine\Externals -ID:\GameEngineStuff\SaltnPepper\SaltnPepperEngine\Engine
-  OBJECT_DIR = SaltnPepperEngine\CMakeFiles\SaltnPepperEngine.dir
-  OBJECT_FILE_DIR = SaltnPepperEngine\CMakeFiles\SaltnPepperEngine.dir\Engine\Math
-  TARGET_COMPILE_PDB = SaltnPepperEngine\CMakeFiles\SaltnPepperEngine.dir\
-  TARGET_PDB = SaltnPepperEngine\SaltnPepperEngine.pdb
+  INCLUDES = -ID:\GameEngineStuff\SproutGameEngine\SproutEngine\Externals -ID:\GameEngineStuff\SproutGameEngine\SproutEngine\Engine
+  OBJECT_DIR = SproutEngine\CMakeFiles\SproutEngine.dir
+  OBJECT_FILE_DIR = SproutEngine\CMakeFiles\SproutEngine.dir\Engine\Math\Vectors
+  TARGET_COMPILE_PDB = SproutEngine\CMakeFiles\SproutEngine.dir\
+  TARGET_PDB = SproutEngine\SproutEngine.pdb
 
-build SaltnPepperEngine\CMakeFiles\SaltnPepperEngine.dir\Engine\Math\Matrix4.cpp.obj: CXX_COMPILER__SaltnPepperEngine_unscanned_Debug D$:\GameEngineStuff\SaltnPepper\SaltnPepperEngine\Engine\Math\Matrix4.cpp || cmake_object_order_depends_target_SaltnPepperEngine
+build SproutEngine\CMakeFiles\SproutEngine.dir\Engine\Math\Quaternion.cpp.obj: CXX_COMPILER__SproutEngine_unscanned_Debug D$:\GameEngineStuff\SproutGameEngine\SproutEngine\Engine\Math\Quaternion.cpp || cmake_object_order_depends_target_SproutEngine
   FLAGS = /utf-8 /MDd /Ob0 /Od /RTC1 -std:c++20 -ZI
-  INCLUDES = -ID:\GameEngineStuff\SaltnPepper\SaltnPepperEngine\Externals -ID:\GameEngineStuff\SaltnPepper\SaltnPepperEngine\Engine
-  OBJECT_DIR = SaltnPepperEngine\CMakeFiles\SaltnPepperEngine.dir
-  OBJECT_FILE_DIR = SaltnPepperEngine\CMakeFiles\SaltnPepperEngine.dir\Engine\Math
-  TARGET_COMPILE_PDB = SaltnPepperEngine\CMakeFiles\SaltnPepperEngine.dir\
-  TARGET_PDB = SaltnPepperEngine\SaltnPepperEngine.pdb
+  INCLUDES = -ID:\GameEngineStuff\SproutGameEngine\SproutEngine\Externals -ID:\GameEngineStuff\SproutGameEngine\SproutEngine\Engine
+  OBJECT_DIR = SproutEngine\CMakeFiles\SproutEngine.dir
+  OBJECT_FILE_DIR = SproutEngine\CMakeFiles\SproutEngine.dir\Engine\Math
+  TARGET_COMPILE_PDB = SproutEngine\CMakeFiles\SproutEngine.dir\
+  TARGET_PDB = SproutEngine\SproutEngine.pdb
 
-build SaltnPepperEngine\CMakeFiles\SaltnPepperEngine.dir\Engine\Math\Vectors\Vector3.cpp.obj: CXX_COMPILER__SaltnPepperEngine_unscanned_Debug D$:\GameEngineStuff\SaltnPepper\SaltnPepperEngine\Engine\Math\Vectors\Vector3.cpp || cmake_object_order_depends_target_SaltnPepperEngine
+build SproutEngine\CMakeFiles\SproutEngine.dir\Engine\Math\Matrix4.cpp.obj: CXX_COMPILER__SproutEngine_unscanned_Debug D$:\GameEngineStuff\SproutGameEngine\SproutEngine\Engine\Math\Matrix4.cpp || cmake_object_order_depends_target_SproutEngine
   FLAGS = /utf-8 /MDd /Ob0 /Od /RTC1 -std:c++20 -ZI
-  INCLUDES = -ID:\GameEngineStuff\SaltnPepper\SaltnPepperEngine\Externals -ID:\GameEngineStuff\SaltnPepper\SaltnPepperEngine\Engine
-  OBJECT_DIR = SaltnPepperEngine\CMakeFiles\SaltnPepperEngine.dir
-  OBJECT_FILE_DIR = SaltnPepperEngine\CMakeFiles\SaltnPepperEngine.dir\Engine\Math\Vectors
-  TARGET_COMPILE_PDB = SaltnPepperEngine\CMakeFiles\SaltnPepperEngine.dir\
-  TARGET_PDB = SaltnPepperEngine\SaltnPepperEngine.pdb
+  INCLUDES = -ID:\GameEngineStuff\SproutGameEngine\SproutEngine\Externals -ID:\GameEngineStuff\SproutGameEngine\SproutEngine\Engine
+  OBJECT_DIR = SproutEngine\CMakeFiles\SproutEngine.dir
+  OBJECT_FILE_DIR = SproutEngine\CMakeFiles\SproutEngine.dir\Engine\Math
+  TARGET_COMPILE_PDB = SproutEngine\CMakeFiles\SproutEngine.dir\
+  TARGET_PDB = SproutEngine\SproutEngine.pdb
 
 
 # =============================================================================
-# Link build statements for EXECUTABLE target SaltnPepperEngine
+# Link build statements for EXECUTABLE target SproutEngine
 
 
 #############################################
-# Link the executable SaltnPepperEngine\SaltnPepperEngine.exe
+# Link the executable SproutEngine\SproutEngine.exe
 
-build SaltnPepperEngine\SaltnPepperEngine.exe: CXX_EXECUTABLE_LINKER__SaltnPepperEngine_Debug SaltnPepperEngine\CMakeFiles\SaltnPepperEngine.dir\SaltnPepperEngine.cpp.obj SaltnPepperEngine\CMakeFiles\SaltnPepperEngine.dir\Engine\Utilities\Logging\Log.cpp.obj SaltnPepperEngine\CMakeFiles\SaltnPepperEngine.dir\Engine\Math\Vectors\Vector2.cpp.obj SaltnPepperEngine\CMakeFiles\SaltnPepperEngine.dir\Engine\Math\Quaternion.cpp.obj SaltnPepperEngine\CMakeFiles\SaltnPepperEngine.dir\Engine\Math\Matrix4.cpp.obj SaltnPepperEngine\CMakeFiles\SaltnPepperEngine.dir\Engine\Math\Vectors\Vector3.cpp.obj
+build SproutEngine\SproutEngine.exe: CXX_EXECUTABLE_LINKER__SproutEngine_Debug SproutEngine\CMakeFiles\SproutEngine.dir\SproutEngine.cpp.obj SproutEngine\CMakeFiles\SproutEngine.dir\Engine\Utilities\Logging\Log.cpp.obj SproutEngine\CMakeFiles\SproutEngine.dir\Engine\Math\Vectors\Vector2.cpp.obj SproutEngine\CMakeFiles\SproutEngine.dir\Engine\Math\Vectors\Vector3.cpp.obj SproutEngine\CMakeFiles\SproutEngine.dir\Engine\Math\Quaternion.cpp.obj SproutEngine\CMakeFiles\SproutEngine.dir\Engine\Math\Matrix4.cpp.obj
   FLAGS = /utf-8 /MDd /Ob0 /Od /RTC1 -ZI
   LINK_FLAGS = /machine:x64 /debug /INCREMENTAL /subsystem:console
   LINK_LIBRARIES = kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib
-  OBJECT_DIR = SaltnPepperEngine\CMakeFiles\SaltnPepperEngine.dir
+  OBJECT_DIR = SproutEngine\CMakeFiles\SproutEngine.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_COMPILE_PDB = SaltnPepperEngine\CMakeFiles\SaltnPepperEngine.dir\
-  TARGET_FILE = SaltnPepperEngine\SaltnPepperEngine.exe
-  TARGET_IMPLIB = SaltnPepperEngine\SaltnPepperEngine.lib
-  TARGET_PDB = SaltnPepperEngine\SaltnPepperEngine.pdb
+  TARGET_COMPILE_PDB = SproutEngine\CMakeFiles\SproutEngine.dir\
+  TARGET_FILE = SproutEngine\SproutEngine.exe
+  TARGET_IMPLIB = SproutEngine\SproutEngine.lib
+  TARGET_PDB = SproutEngine\SproutEngine.pdb
 
 
 #############################################
 # Utility command for edit_cache
 
-build SaltnPepperEngine\CMakeFiles\edit_cache.util: CUSTOM_COMMAND
-  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D D:\GameEngineStuff\SaltnPepper\out\build\x64-debug\SaltnPepperEngine && "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+build SproutEngine\CMakeFiles\edit_cache.util: CUSTOM_COMMAND
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D D:\GameEngineStuff\SproutGameEngine\out\build\x64-debug\SproutEngine && "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
   DESC = No interactive CMake dialog available...
   restat = 1
 
-build SaltnPepperEngine\edit_cache: phony SaltnPepperEngine\CMakeFiles\edit_cache.util
+build SproutEngine\edit_cache: phony SproutEngine\CMakeFiles\edit_cache.util
 
 
 #############################################
 # Utility command for rebuild_cache
 
-build SaltnPepperEngine\CMakeFiles\rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D D:\GameEngineStuff\SaltnPepper\out\build\x64-debug\SaltnPepperEngine && "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" --regenerate-during-build -SD:\GameEngineStuff\SaltnPepper -BD:\GameEngineStuff\SaltnPepper\out\build\x64-debug"
+build SproutEngine\CMakeFiles\rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D D:\GameEngineStuff\SproutGameEngine\out\build\x64-debug\SproutEngine && "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" --regenerate-during-build -SD:\GameEngineStuff\SproutGameEngine -BD:\GameEngineStuff\SproutGameEngine\out\build\x64-debug"
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
 
-build SaltnPepperEngine\rebuild_cache: phony SaltnPepperEngine\CMakeFiles\rebuild_cache.util
+build SproutEngine\rebuild_cache: phony SproutEngine\CMakeFiles\rebuild_cache.util
 
 # =============================================================================
 # Write statements declared in CMakeLists.txt:
-# D:/GameEngineStuff/SaltnPepper/SaltnPepperEngine/CMakeLists.txt
-# =============================================================================
-
-
-#############################################
-# Utility command for edit_cache
-
-build SaltnPepperEngine\Engine\CMakeFiles\edit_cache.util: CUSTOM_COMMAND
-  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D D:\GameEngineStuff\SaltnPepper\out\build\x64-debug\SaltnPepperEngine\Engine && "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
-  DESC = No interactive CMake dialog available...
-  restat = 1
-
-build SaltnPepperEngine\Engine\edit_cache: phony SaltnPepperEngine\Engine\CMakeFiles\edit_cache.util
-
-
-#############################################
-# Utility command for rebuild_cache
-
-build SaltnPepperEngine\Engine\CMakeFiles\rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D D:\GameEngineStuff\SaltnPepper\out\build\x64-debug\SaltnPepperEngine\Engine && "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" --regenerate-during-build -SD:\GameEngineStuff\SaltnPepper -BD:\GameEngineStuff\SaltnPepper\out\build\x64-debug"
-  DESC = Running CMake to regenerate build system...
-  pool = console
-  restat = 1
-
-build SaltnPepperEngine\Engine\rebuild_cache: phony SaltnPepperEngine\Engine\CMakeFiles\rebuild_cache.util
-
-# =============================================================================
-# Write statements declared in CMakeLists.txt:
-# D:/GameEngineStuff/SaltnPepper/SaltnPepperEngine/Engine/CMakeLists.txt
+# D:/GameEngineStuff/SproutGameEngine/SproutEngine/CMakeLists.txt
 # =============================================================================
 
 
 #############################################
 # Utility command for edit_cache
 
-build SaltnPepperEngine\Engine\Utilities\CMakeFiles\edit_cache.util: CUSTOM_COMMAND
-  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D D:\GameEngineStuff\SaltnPepper\out\build\x64-debug\SaltnPepperEngine\Engine\Utilities && "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+build SproutEngine\Engine\CMakeFiles\edit_cache.util: CUSTOM_COMMAND
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D D:\GameEngineStuff\SproutGameEngine\out\build\x64-debug\SproutEngine\Engine && "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
   DESC = No interactive CMake dialog available...
   restat = 1
 
-build SaltnPepperEngine\Engine\Utilities\edit_cache: phony SaltnPepperEngine\Engine\Utilities\CMakeFiles\edit_cache.util
+build SproutEngine\Engine\edit_cache: phony SproutEngine\Engine\CMakeFiles\edit_cache.util
 
 
 #############################################
 # Utility command for rebuild_cache
 
-build SaltnPepperEngine\Engine\Utilities\CMakeFiles\rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D D:\GameEngineStuff\SaltnPepper\out\build\x64-debug\SaltnPepperEngine\Engine\Utilities && "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" --regenerate-during-build -SD:\GameEngineStuff\SaltnPepper -BD:\GameEngineStuff\SaltnPepper\out\build\x64-debug"
+build SproutEngine\Engine\CMakeFiles\rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D D:\GameEngineStuff\SproutGameEngine\out\build\x64-debug\SproutEngine\Engine && "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" --regenerate-during-build -SD:\GameEngineStuff\SproutGameEngine -BD:\GameEngineStuff\SproutGameEngine\out\build\x64-debug"
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
 
-build SaltnPepperEngine\Engine\Utilities\rebuild_cache: phony SaltnPepperEngine\Engine\Utilities\CMakeFiles\rebuild_cache.util
+build SproutEngine\Engine\rebuild_cache: phony SproutEngine\Engine\CMakeFiles\rebuild_cache.util
 
 # =============================================================================
 # Write statements declared in CMakeLists.txt:
-# D:/GameEngineStuff/SaltnPepper/SaltnPepperEngine/Engine/CMakeLists.txt
+# D:/GameEngineStuff/SproutGameEngine/SproutEngine/Engine/CMakeLists.txt
 # =============================================================================
 
 
 #############################################
 # Utility command for edit_cache
 
-build SaltnPepperEngine\Engine\Math\CMakeFiles\edit_cache.util: CUSTOM_COMMAND
-  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D D:\GameEngineStuff\SaltnPepper\out\build\x64-debug\SaltnPepperEngine\Engine\Math && "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+build SproutEngine\Engine\Utilities\CMakeFiles\edit_cache.util: CUSTOM_COMMAND
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D D:\GameEngineStuff\SproutGameEngine\out\build\x64-debug\SproutEngine\Engine\Utilities && "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
   DESC = No interactive CMake dialog available...
   restat = 1
 
-build SaltnPepperEngine\Engine\Math\edit_cache: phony SaltnPepperEngine\Engine\Math\CMakeFiles\edit_cache.util
+build SproutEngine\Engine\Utilities\edit_cache: phony SproutEngine\Engine\Utilities\CMakeFiles\edit_cache.util
 
 
 #############################################
 # Utility command for rebuild_cache
 
-build SaltnPepperEngine\Engine\Math\CMakeFiles\rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D D:\GameEngineStuff\SaltnPepper\out\build\x64-debug\SaltnPepperEngine\Engine\Math && "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" --regenerate-during-build -SD:\GameEngineStuff\SaltnPepper -BD:\GameEngineStuff\SaltnPepper\out\build\x64-debug"
+build SproutEngine\Engine\Utilities\CMakeFiles\rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D D:\GameEngineStuff\SproutGameEngine\out\build\x64-debug\SproutEngine\Engine\Utilities && "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" --regenerate-during-build -SD:\GameEngineStuff\SproutGameEngine -BD:\GameEngineStuff\SproutGameEngine\out\build\x64-debug"
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
 
-build SaltnPepperEngine\Engine\Math\rebuild_cache: phony SaltnPepperEngine\Engine\Math\CMakeFiles\rebuild_cache.util
+build SproutEngine\Engine\Utilities\rebuild_cache: phony SproutEngine\Engine\Utilities\CMakeFiles\rebuild_cache.util
 
 # =============================================================================
 # Write statements declared in CMakeLists.txt:
-# D:/GameEngineStuff/SaltnPepper/SaltnPepperEngine/CMakeLists.txt
+# D:/GameEngineStuff/SproutGameEngine/SproutEngine/Engine/CMakeLists.txt
 # =============================================================================
 
 
 #############################################
 # Utility command for edit_cache
 
-build SaltnPepperEngine\Externals\CMakeFiles\edit_cache.util: CUSTOM_COMMAND
-  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D D:\GameEngineStuff\SaltnPepper\out\build\x64-debug\SaltnPepperEngine\Externals && "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+build SproutEngine\Engine\Math\CMakeFiles\edit_cache.util: CUSTOM_COMMAND
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D D:\GameEngineStuff\SproutGameEngine\out\build\x64-debug\SproutEngine\Engine\Math && "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
   DESC = No interactive CMake dialog available...
   restat = 1
 
-build SaltnPepperEngine\Externals\edit_cache: phony SaltnPepperEngine\Externals\CMakeFiles\edit_cache.util
+build SproutEngine\Engine\Math\edit_cache: phony SproutEngine\Engine\Math\CMakeFiles\edit_cache.util
 
 
 #############################################
 # Utility command for rebuild_cache
 
-build SaltnPepperEngine\Externals\CMakeFiles\rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D D:\GameEngineStuff\SaltnPepper\out\build\x64-debug\SaltnPepperEngine\Externals && "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" --regenerate-during-build -SD:\GameEngineStuff\SaltnPepper -BD:\GameEngineStuff\SaltnPepper\out\build\x64-debug"
+build SproutEngine\Engine\Math\CMakeFiles\rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D D:\GameEngineStuff\SproutGameEngine\out\build\x64-debug\SproutEngine\Engine\Math && "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" --regenerate-during-build -SD:\GameEngineStuff\SproutGameEngine -BD:\GameEngineStuff\SproutGameEngine\out\build\x64-debug"
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
 
-build SaltnPepperEngine\Externals\rebuild_cache: phony SaltnPepperEngine\Externals\CMakeFiles\rebuild_cache.util
+build SproutEngine\Engine\Math\rebuild_cache: phony SproutEngine\Engine\Math\CMakeFiles\rebuild_cache.util
 
 # =============================================================================
 # Write statements declared in CMakeLists.txt:
-# D:/GameEngineStuff/SaltnPepper/CMakeLists.txt
+# D:/GameEngineStuff/SproutGameEngine/SproutEngine/CMakeLists.txt
 # =============================================================================
-
-# =============================================================================
-# Object build statements for EXECUTABLE target SaltnPepperRuntime
 
 
 #############################################
-# Order-only phony target for SaltnPepperRuntime
+# Utility command for edit_cache
 
-build cmake_object_order_depends_target_SaltnPepperRuntime: phony || .
+build SproutEngine\Externals\CMakeFiles\edit_cache.util: CUSTOM_COMMAND
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D D:\GameEngineStuff\SproutGameEngine\out\build\x64-debug\SproutEngine\Externals && "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+  DESC = No interactive CMake dialog available...
+  restat = 1
 
-build SaltnPepperRuntime\CMakeFiles\SaltnPepperRuntime.dir\SaltnPepperRuntime.cpp.obj: CXX_COMPILER__SaltnPepperRuntime_unscanned_Debug D$:\GameEngineStuff\SaltnPepper\SaltnPepperRuntime\SaltnPepperRuntime.cpp || cmake_object_order_depends_target_SaltnPepperRuntime
+build SproutEngine\Externals\edit_cache: phony SproutEngine\Externals\CMakeFiles\edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build SproutEngine\Externals\CMakeFiles\rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D D:\GameEngineStuff\SproutGameEngine\out\build\x64-debug\SproutEngine\Externals && "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" --regenerate-during-build -SD:\GameEngineStuff\SproutGameEngine -BD:\GameEngineStuff\SproutGameEngine\out\build\x64-debug"
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build SproutEngine\Externals\rebuild_cache: phony SproutEngine\Externals\CMakeFiles\rebuild_cache.util
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# D:/GameEngineStuff/SproutGameEngine/CMakeLists.txt
+# =============================================================================
+
+# =============================================================================
+# Object build statements for EXECUTABLE target SproutRuntime
+
+
+#############################################
+# Order-only phony target for SproutRuntime
+
+build cmake_object_order_depends_target_SproutRuntime: phony || .
+
+build SproutRuntime\CMakeFiles\SproutRuntime.dir\SproutRuntime.cpp.obj: CXX_COMPILER__SproutRuntime_unscanned_Debug D$:\GameEngineStuff\SproutGameEngine\SproutRuntime\SproutRuntime.cpp || cmake_object_order_depends_target_SproutRuntime
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Ob0 /Od /RTC1 -ZI
-  OBJECT_DIR = SaltnPepperRuntime\CMakeFiles\SaltnPepperRuntime.dir
-  OBJECT_FILE_DIR = SaltnPepperRuntime\CMakeFiles\SaltnPepperRuntime.dir
-  TARGET_COMPILE_PDB = SaltnPepperRuntime\CMakeFiles\SaltnPepperRuntime.dir\
-  TARGET_PDB = SaltnPepperRuntime\SaltnPepperRuntime.pdb
+  OBJECT_DIR = SproutRuntime\CMakeFiles\SproutRuntime.dir
+  OBJECT_FILE_DIR = SproutRuntime\CMakeFiles\SproutRuntime.dir
+  TARGET_COMPILE_PDB = SproutRuntime\CMakeFiles\SproutRuntime.dir\
+  TARGET_PDB = SproutRuntime\SproutRuntime.pdb
 
 
 # =============================================================================
-# Link build statements for EXECUTABLE target SaltnPepperRuntime
+# Link build statements for EXECUTABLE target SproutRuntime
 
 
 #############################################
-# Link the executable SaltnPepperRuntime\SaltnPepperRuntime.exe
+# Link the executable SproutRuntime\SproutRuntime.exe
 
-build SaltnPepperRuntime\SaltnPepperRuntime.exe: CXX_EXECUTABLE_LINKER__SaltnPepperRuntime_Debug SaltnPepperRuntime\CMakeFiles\SaltnPepperRuntime.dir\SaltnPepperRuntime.cpp.obj
+build SproutRuntime\SproutRuntime.exe: CXX_EXECUTABLE_LINKER__SproutRuntime_Debug SproutRuntime\CMakeFiles\SproutRuntime.dir\SproutRuntime.cpp.obj
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Ob0 /Od /RTC1 -ZI
   LINK_FLAGS = /machine:x64 /debug /INCREMENTAL /subsystem:console
   LINK_LIBRARIES = kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib
-  OBJECT_DIR = SaltnPepperRuntime\CMakeFiles\SaltnPepperRuntime.dir
+  OBJECT_DIR = SproutRuntime\CMakeFiles\SproutRuntime.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_COMPILE_PDB = SaltnPepperRuntime\CMakeFiles\SaltnPepperRuntime.dir\
-  TARGET_FILE = SaltnPepperRuntime\SaltnPepperRuntime.exe
-  TARGET_IMPLIB = SaltnPepperRuntime\SaltnPepperRuntime.lib
-  TARGET_PDB = SaltnPepperRuntime\SaltnPepperRuntime.pdb
+  TARGET_COMPILE_PDB = SproutRuntime\CMakeFiles\SproutRuntime.dir\
+  TARGET_FILE = SproutRuntime\SproutRuntime.exe
+  TARGET_IMPLIB = SproutRuntime\SproutRuntime.lib
+  TARGET_PDB = SproutRuntime\SproutRuntime.pdb
 
 
 #############################################
 # Utility command for edit_cache
 
-build SaltnPepperRuntime\CMakeFiles\edit_cache.util: CUSTOM_COMMAND
-  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D D:\GameEngineStuff\SaltnPepper\out\build\x64-debug\SaltnPepperRuntime && "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+build SproutRuntime\CMakeFiles\edit_cache.util: CUSTOM_COMMAND
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D D:\GameEngineStuff\SproutGameEngine\out\build\x64-debug\SproutRuntime && "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
   DESC = No interactive CMake dialog available...
   restat = 1
 
-build SaltnPepperRuntime\edit_cache: phony SaltnPepperRuntime\CMakeFiles\edit_cache.util
+build SproutRuntime\edit_cache: phony SproutRuntime\CMakeFiles\edit_cache.util
 
 
 #############################################
 # Utility command for rebuild_cache
 
-build SaltnPepperRuntime\CMakeFiles\rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D D:\GameEngineStuff\SaltnPepper\out\build\x64-debug\SaltnPepperRuntime && "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" --regenerate-during-build -SD:\GameEngineStuff\SaltnPepper -BD:\GameEngineStuff\SaltnPepper\out\build\x64-debug"
+build SproutRuntime\CMakeFiles\rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D D:\GameEngineStuff\SproutGameEngine\out\build\x64-debug\SproutRuntime && "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" --regenerate-during-build -SD:\GameEngineStuff\SproutGameEngine -BD:\GameEngineStuff\SproutGameEngine\out\build\x64-debug"
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
 
-build SaltnPepperRuntime\rebuild_cache: phony SaltnPepperRuntime\CMakeFiles\rebuild_cache.util
+build SproutRuntime\rebuild_cache: phony SproutRuntime\CMakeFiles\rebuild_cache.util
 
 # =============================================================================
 # Target aliases.
 
-build SaltnPepperEngine: phony SaltnPepperEngine\SaltnPepperEngine.exe
+build SproutEngine: phony SproutEngine\SproutEngine.exe
 
-build SaltnPepperEngine.exe: phony SaltnPepperEngine\SaltnPepperEngine.exe
+build SproutEngine.exe: phony SproutEngine\SproutEngine.exe
 
-build SaltnPepperRuntime: phony SaltnPepperRuntime\SaltnPepperRuntime.exe
+build SproutRuntime: phony SproutRuntime\SproutRuntime.exe
 
-build SaltnPepperRuntime.exe: phony SaltnPepperRuntime\SaltnPepperRuntime.exe
+build SproutRuntime.exe: phony SproutRuntime\SproutRuntime.exe
 
 # =============================================================================
 # Folder targets.
@@ -361,51 +361,51 @@ build SaltnPepperRuntime.exe: phony SaltnPepperRuntime\SaltnPepperRuntime.exe
 # =============================================================================
 
 #############################################
-# Folder: D:/GameEngineStuff/SaltnPepper/out/build/x64-debug
+# Folder: D:/GameEngineStuff/SproutGameEngine/out/build/x64-debug
 
-build all: phony SaltnPepperEngine\all SaltnPepperRuntime\all
-
-# =============================================================================
-
-#############################################
-# Folder: D:/GameEngineStuff/SaltnPepper/out/build/x64-debug/SaltnPepperEngine
-
-build SaltnPepperEngine\all: phony SaltnPepperEngine\SaltnPepperEngine.exe SaltnPepperEngine\Engine\all SaltnPepperEngine\Externals\all
+build all: phony SproutEngine\all SproutRuntime\all
 
 # =============================================================================
 
 #############################################
-# Folder: D:/GameEngineStuff/SaltnPepper/out/build/x64-debug/SaltnPepperEngine/Engine
+# Folder: D:/GameEngineStuff/SproutGameEngine/out/build/x64-debug/SproutEngine
 
-build SaltnPepperEngine\Engine\all: phony SaltnPepperEngine\Engine\Utilities\all SaltnPepperEngine\Engine\Math\all
-
-# =============================================================================
-
-#############################################
-# Folder: D:/GameEngineStuff/SaltnPepper/out/build/x64-debug/SaltnPepperEngine/Engine/Math
-
-build SaltnPepperEngine\Engine\Math\all: phony
+build SproutEngine\all: phony SproutEngine\SproutEngine.exe SproutEngine\Engine\all SproutEngine\Externals\all
 
 # =============================================================================
 
 #############################################
-# Folder: D:/GameEngineStuff/SaltnPepper/out/build/x64-debug/SaltnPepperEngine/Engine/Utilities
+# Folder: D:/GameEngineStuff/SproutGameEngine/out/build/x64-debug/SproutEngine/Engine
 
-build SaltnPepperEngine\Engine\Utilities\all: phony
-
-# =============================================================================
-
-#############################################
-# Folder: D:/GameEngineStuff/SaltnPepper/out/build/x64-debug/SaltnPepperEngine/Externals
-
-build SaltnPepperEngine\Externals\all: phony
+build SproutEngine\Engine\all: phony SproutEngine\Engine\Utilities\all SproutEngine\Engine\Math\all
 
 # =============================================================================
 
 #############################################
-# Folder: D:/GameEngineStuff/SaltnPepper/out/build/x64-debug/SaltnPepperRuntime
+# Folder: D:/GameEngineStuff/SproutGameEngine/out/build/x64-debug/SproutEngine/Engine/Math
 
-build SaltnPepperRuntime\all: phony SaltnPepperRuntime\SaltnPepperRuntime.exe
+build SproutEngine\Engine\Math\all: phony
+
+# =============================================================================
+
+#############################################
+# Folder: D:/GameEngineStuff/SproutGameEngine/out/build/x64-debug/SproutEngine/Engine/Utilities
+
+build SproutEngine\Engine\Utilities\all: phony
+
+# =============================================================================
+
+#############################################
+# Folder: D:/GameEngineStuff/SproutGameEngine/out/build/x64-debug/SproutEngine/Externals
+
+build SproutEngine\Externals\all: phony
+
+# =============================================================================
+
+#############################################
+# Folder: D:/GameEngineStuff/SproutGameEngine/out/build/x64-debug/SproutRuntime
+
+build SproutRuntime\all: phony SproutRuntime\SproutRuntime.exe
 
 # =============================================================================
 # Built-in targets
@@ -414,14 +414,14 @@ build SaltnPepperRuntime\all: phony SaltnPepperRuntime\SaltnPepperRuntime.exe
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja: RERUN_CMAKE | C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\CMakeCInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\CMakeCXXInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\CMakeCommonLanguageInclude.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\CMakeGenericSystem.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\CMakeInitializeConfigs.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\CMakeLanguageInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\CMakeRCInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\CMakeSystemSpecificInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\CMakeSystemSpecificInitialize.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\Compiler\CMakeCommonCompilerMacros.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\Compiler\MSVC-C.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\Compiler\MSVC-CXX.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\Compiler\MSVC.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\Platform\Windows-Initialize.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\Platform\Windows-MSVC-C.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\Platform\Windows-MSVC-CXX.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\Platform\Windows-MSVC.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\Platform\Windows.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\Platform\WindowsPaths.cmake CMakeCache.txt CMakeFiles\3.29.5-msvc4\CMakeCCompiler.cmake CMakeFiles\3.29.5-msvc4\CMakeCXXCompiler.cmake CMakeFiles\3.29.5-msvc4\CMakeRCCompiler.cmake CMakeFiles\3.29.5-msvc4\CMakeSystem.cmake D$:\GameEngineStuff\SaltnPepper\CMakeLists.txt D$:\GameEngineStuff\SaltnPepper\SaltnPepperEngine\CMakeLists.txt D$:\GameEngineStuff\SaltnPepper\SaltnPepperEngine\Engine\CMakeLists.txt D$:\GameEngineStuff\SaltnPepper\SaltnPepperEngine\Engine\Math\CMakeLists.txt D$:\GameEngineStuff\SaltnPepper\SaltnPepperEngine\Engine\Utilities\CMakeLists.txt D$:\GameEngineStuff\SaltnPepper\SaltnPepperEngine\Externals\CMakeLists.txt D$:\GameEngineStuff\SaltnPepper\SaltnPepperRuntime\CMakeLists.txt
+build build.ninja: RERUN_CMAKE | C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\CMakeCCompiler.cmake.in C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\CMakeCCompilerABI.c C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\CMakeCInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\CMakeCXXCompiler.cmake.in C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\CMakeCXXCompilerABI.cpp C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\CMakeCXXInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\CMakeCommonLanguageInclude.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\CMakeCompilerIdDetection.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\CMakeDetermineCCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\CMakeDetermineCXXCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\CMakeDetermineCompileFeatures.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\CMakeDetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\CMakeDetermineCompilerABI.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\CMakeDetermineCompilerId.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\CMakeDetermineRCCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\CMakeDetermineSystem.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\CMakeFindBinUtils.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\CMakeGenericSystem.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\CMakeInitializeConfigs.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\CMakeLanguageInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\CMakeParseImplicitIncludeInfo.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\CMakeParseImplicitLinkInfo.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\CMakeParseLibraryArchitecture.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\CMakeRCCompiler.cmake.in C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\CMakeRCInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\CMakeSystem.cmake.in C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\CMakeSystemSpecificInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\CMakeSystemSpecificInitialize.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\CMakeTestCCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\CMakeTestCXXCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\CMakeTestCompilerCommon.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\CMakeTestRCCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\Compiler\ADSP-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\Compiler\ARMCC-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\Compiler\ARMClang-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\Compiler\AppleClang-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\Compiler\Borland-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\Compiler\Bruce-C-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\Compiler\CMakeCommonCompilerMacros.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\Compiler\Clang-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\Compiler\Clang-DetermineCompilerInternal.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\Compiler\Compaq-C-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\Compiler\Cray-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\Compiler\CrayClang-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\Compiler\Embarcadero-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\Compiler\Fujitsu-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\Compiler\FujitsuClang-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\Compiler\GHS-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\Compiler\GNU-C-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\Compiler\HP-C-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\Compiler\HP-CXX-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\Compiler\IAR-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\Compiler\IBMClang-C-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\Compiler\IBMClang-CXX-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\Compiler\Intel-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\Compiler\IntelLLVM-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\Compiler\LCC-C-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\Compiler\LCC-CXX-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\Compiler\MSVC-C.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\Compiler\MSVC-CXX.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\Compiler\MSVC-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\Compiler\MSVC.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\Compiler\NVHPC-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\Compiler\NVIDIA-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\Compiler\OrangeC-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\Compiler\PGI-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\Compiler\PathScale-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\Compiler\SCO-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\Compiler\SDCC-C-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\Compiler\SunPro-C-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\Compiler\TI-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\Compiler\TIClang-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\Compiler\Tasking-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\Compiler\Watcom-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\Compiler\XL-C-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\Compiler\XL-CXX-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\Compiler\XLClang-C-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\Compiler\zOS-C-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\Internal\CMakeDetermineLinkerId.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\Internal\FeatureTesting.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\Platform\Windows-Determine-CXX.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\Platform\Windows-Initialize.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\Platform\Windows-MSVC-C.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\Platform\Windows-MSVC-CXX.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\Platform\Windows-MSVC.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\Platform\Windows.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\Platform\WindowsPaths.cmake CMakeCache.txt CMakeFiles\3.29.5-msvc4\CMakeCCompiler.cmake CMakeFiles\3.29.5-msvc4\CMakeCXXCompiler.cmake CMakeFiles\3.29.5-msvc4\CMakeRCCompiler.cmake CMakeFiles\3.29.5-msvc4\CMakeSystem.cmake D$:\GameEngineStuff\SproutGameEngine\CMakeLists.txt D$:\GameEngineStuff\SproutGameEngine\SproutEngine\CMakeLists.txt D$:\GameEngineStuff\SproutGameEngine\SproutEngine\Engine\CMakeLists.txt D$:\GameEngineStuff\SproutGameEngine\SproutEngine\Engine\Math\CMakeLists.txt D$:\GameEngineStuff\SproutGameEngine\SproutEngine\Engine\Utilities\CMakeLists.txt D$:\GameEngineStuff\SproutGameEngine\SproutEngine\Externals\CMakeLists.txt D$:\GameEngineStuff\SproutGameEngine\SproutRuntime\CMakeLists.txt
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\CMakeCInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\CMakeCXXInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\CMakeCommonLanguageInclude.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\CMakeGenericSystem.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\CMakeInitializeConfigs.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\CMakeLanguageInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\CMakeRCInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\CMakeSystemSpecificInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\CMakeSystemSpecificInitialize.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\Compiler\CMakeCommonCompilerMacros.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\Compiler\MSVC-C.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\Compiler\MSVC-CXX.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\Compiler\MSVC.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\Platform\Windows-Initialize.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\Platform\Windows-MSVC-C.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\Platform\Windows-MSVC-CXX.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\Platform\Windows-MSVC.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\Platform\Windows.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\Platform\WindowsPaths.cmake CMakeCache.txt CMakeFiles\3.29.5-msvc4\CMakeCCompiler.cmake CMakeFiles\3.29.5-msvc4\CMakeCXXCompiler.cmake CMakeFiles\3.29.5-msvc4\CMakeRCCompiler.cmake CMakeFiles\3.29.5-msvc4\CMakeSystem.cmake D$:\GameEngineStuff\SaltnPepper\CMakeLists.txt D$:\GameEngineStuff\SaltnPepper\SaltnPepperEngine\CMakeLists.txt D$:\GameEngineStuff\SaltnPepper\SaltnPepperEngine\Engine\CMakeLists.txt D$:\GameEngineStuff\SaltnPepper\SaltnPepperEngine\Engine\Math\CMakeLists.txt D$:\GameEngineStuff\SaltnPepper\SaltnPepperEngine\Engine\Utilities\CMakeLists.txt D$:\GameEngineStuff\SaltnPepper\SaltnPepperEngine\Externals\CMakeLists.txt D$:\GameEngineStuff\SaltnPepper\SaltnPepperRuntime\CMakeLists.txt: phony
+build C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\CMakeCCompiler.cmake.in C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\CMakeCCompilerABI.c C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\CMakeCInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\CMakeCXXCompiler.cmake.in C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\CMakeCXXCompilerABI.cpp C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\CMakeCXXInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\CMakeCommonLanguageInclude.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\CMakeCompilerIdDetection.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\CMakeDetermineCCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\CMakeDetermineCXXCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\CMakeDetermineCompileFeatures.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\CMakeDetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\CMakeDetermineCompilerABI.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\CMakeDetermineCompilerId.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\CMakeDetermineRCCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\CMakeDetermineSystem.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\CMakeFindBinUtils.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\CMakeGenericSystem.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\CMakeInitializeConfigs.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\CMakeLanguageInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\CMakeParseImplicitIncludeInfo.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\CMakeParseImplicitLinkInfo.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\CMakeParseLibraryArchitecture.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\CMakeRCCompiler.cmake.in C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\CMakeRCInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\CMakeSystem.cmake.in C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\CMakeSystemSpecificInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\CMakeSystemSpecificInitialize.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\CMakeTestCCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\CMakeTestCXXCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\CMakeTestCompilerCommon.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\CMakeTestRCCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\Compiler\ADSP-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\Compiler\ARMCC-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\Compiler\ARMClang-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\Compiler\AppleClang-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\Compiler\Borland-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\Compiler\Bruce-C-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\Compiler\CMakeCommonCompilerMacros.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\Compiler\Clang-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\Compiler\Clang-DetermineCompilerInternal.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\Compiler\Compaq-C-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\Compiler\Cray-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\Compiler\CrayClang-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\Compiler\Embarcadero-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\Compiler\Fujitsu-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\Compiler\FujitsuClang-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\Compiler\GHS-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\Compiler\GNU-C-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\Compiler\HP-C-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\Compiler\HP-CXX-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\Compiler\IAR-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\Compiler\IBMClang-C-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\Compiler\IBMClang-CXX-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\Compiler\Intel-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\Compiler\IntelLLVM-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\Compiler\LCC-C-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\Compiler\LCC-CXX-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\Compiler\MSVC-C.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\Compiler\MSVC-CXX.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\Compiler\MSVC-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\Compiler\MSVC.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\Compiler\NVHPC-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\Compiler\NVIDIA-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\Compiler\OrangeC-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\Compiler\PGI-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\Compiler\PathScale-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\Compiler\SCO-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\Compiler\SDCC-C-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\Compiler\SunPro-C-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\Compiler\TI-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\Compiler\TIClang-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\Compiler\Tasking-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\Compiler\Watcom-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\Compiler\XL-C-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\Compiler\XL-CXX-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\Compiler\XLClang-C-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\Compiler\zOS-C-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\Internal\CMakeDetermineLinkerId.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\Internal\FeatureTesting.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\Platform\Windows-Determine-CXX.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\Platform\Windows-Initialize.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\Platform\Windows-MSVC-C.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\Platform\Windows-MSVC-CXX.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\Platform\Windows-MSVC.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\Platform\Windows.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.29\Modules\Platform\WindowsPaths.cmake CMakeCache.txt CMakeFiles\3.29.5-msvc4\CMakeCCompiler.cmake CMakeFiles\3.29.5-msvc4\CMakeCXXCompiler.cmake CMakeFiles\3.29.5-msvc4\CMakeRCCompiler.cmake CMakeFiles\3.29.5-msvc4\CMakeSystem.cmake D$:\GameEngineStuff\SproutGameEngine\CMakeLists.txt D$:\GameEngineStuff\SproutGameEngine\SproutEngine\CMakeLists.txt D$:\GameEngineStuff\SproutGameEngine\SproutEngine\Engine\CMakeLists.txt D$:\GameEngineStuff\SproutGameEngine\SproutEngine\Engine\Math\CMakeLists.txt D$:\GameEngineStuff\SproutGameEngine\SproutEngine\Engine\Utilities\CMakeLists.txt D$:\GameEngineStuff\SproutGameEngine\SproutEngine\Externals\CMakeLists.txt D$:\GameEngineStuff\SproutGameEngine\SproutRuntime\CMakeLists.txt: phony
 
 
 #############################################

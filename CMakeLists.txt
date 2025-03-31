@@ -13,18 +13,18 @@ endif()
 
 
 
-PROJECT ("SaltnPepper")
+PROJECT ("SproutEngine")
 
 # Include sub-projects.
-ADD_SUBDIRECTORY ("SaltnPepperEngine")
+ADD_SUBDIRECTORY ("SproutEngine")
 
-ADD_SUBDIRECTORY("SaltnPepperRuntime")
+ADD_SUBDIRECTORY("SproutRuntime")
 
 
 #SUBDIRS("Externals")
 
 
-SET (EXTERNAL_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}/SaltnPepperEngine/Externals/)
-SET (ENGINE_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}/SaltnPepperEngine/Engine/)
+SET (EXTERNAL_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}/SproutEngine/Externals/)
+SET (ENGINE_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}/SproutEngine/Engine/)
 
 #MESSAGE ([<WARNING>]"Binary path: ${ENGINE_DIRECTORY}")
